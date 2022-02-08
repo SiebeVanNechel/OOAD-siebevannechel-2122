@@ -64,18 +64,8 @@ namespace WpfAgenda
             {
                 ListBoxItem afspraak = new ListBoxItem();
                 afspraak.Content = DatePickerDatum.SelectedDate.Value.ToString("dd//mm/yyyy") + " - " + txbTitel.Text;
-                if (cmbType.SelectedIndex==0)
-                {
-                    ListBoxAfspraken.Items.Add(afspraak);
-                }
-                if (cmbType.SelectedIndex == 1)
-                {
-                    ListBoxAfspraken.Items.Add(afspraak);
-                }
-                if (cmbType.SelectedIndex == 2)
-                {
-                    ListBoxAfspraken.Items.Add(afspraak);
-                }
+                ListBoxAfspraken.Items.Add(afspraak);
+
                 //invoer leegmaken
                 txbTitel.Text = "";
                 cmbType.SelectedIndex = -1;
