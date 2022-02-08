@@ -1,0 +1,15 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\bin\Debug\WpfAgenda.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\bin\Debug\WpfAgenda.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\bin\Debug\WpfAgenda.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\WpfAgenda.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\MainWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\App.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\WpfAgenda_MarkupCompile.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\WpfAgenda_MarkupCompile.lref
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\MainWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\WpfAgenda.g.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\WpfAgenda.Properties.Resources.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\WpfAgenda.csproj.GenerateResource.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\WpfAgenda.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\WpfAgenda.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAgenda\obj\Debug\WpfAgenda.pdb

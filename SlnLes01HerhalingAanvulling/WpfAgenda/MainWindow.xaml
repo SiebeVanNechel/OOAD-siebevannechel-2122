@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfAgenda.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAgenda"
+        mc:Ignorable="d"
+        Title="WpfAgenda" Height="450" Width="900">
+    <Grid>
+        <Label Content="Nieuwe afspraak" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Titel:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,52,0,0" FontSize="16"/>
+        <Label Content="Datum:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,88,0,0" FontSize="16"/>
+        <Label Content="Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,124,0,0" FontSize="16"/>
+        <Label Content="Herinnering:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,160,0,0" FontSize="16"/>
+        <Label Content="Melding:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,255,0,0" FontSize="16"/>
+        <TextBox x:Name="txbTitel" HorizontalAlignment="Left" Height="23" Margin="136,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
+        <DatePicker x:Name="DatePickerDatum" HorizontalAlignment="Left" Margin="136,95,0,0" VerticalAlignment="Top" Width="172"/>
+        <ComboBox x:Name="cmbType" HorizontalAlignment="Left" VerticalAlignment="Top" Width="172" Margin="136,133,0,0" >
+            <ComboBoxItem Content="Meeting" HorizontalAlignment="Left" Width="170"/>
+            <ComboBoxItem Content="Herinnering" HorizontalAlignment="Left" Width="170"/>
+            <ComboBoxItem Content="Online event" HorizontalAlignment="Left" Width="170"/>
+        </ComboBox>
+        <RadioButton x:Name="RadioGeen" Content="Geen" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,170,0,0" FontSize="16" GroupName="Herinnering"/>
+        <RadioButton x:Name="Radio1Dag" Content="1 dag op voorhand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,190,0,0" FontSize="16" GroupName="Herinnering"/>
+        <RadioButton x:Name="Radio2Dag" Content="2 dagen op voorhand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,210,0,0" FontSize="16" GroupName="Herinnering"/>
+        <RadioButton x:Name="Radio3Dag" Content="3 dagen op voorhand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,230,0,0" FontSize="16" GroupName="Herinnering"/>
+        <CheckBox x:Name="CheckNotificatie" Content="Notificatie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,265,0,0" FontSize="16"/>
+        <CheckBox x:Name="CheckEmail" Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,285,0,0" FontSize="16"/>
+        <Button x:Name="btnToevoegen" Content="Toevoegen" HorizontalAlignment="Left" Margin="136,350,0,0" VerticalAlignment="Top" Width="154" FontSize="16" Height="29" Click="btnToevoegen_Click"/>
+        <Label Content="Overzicht afspraken" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="559,10,0,0" FontWeight="Bold" FontSize="20"/>
+        <ListBox x:Name="ListBoxAfspraken" HorizontalAlignment="Left" Height="245" Margin="559,60,-77,0" VerticalAlignment="Top" Width="312"/>
+        <Label x:Name="lblFoutTitel"  Content="Gelieve een titel in te vullen" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,59,0,0" FontStyle="Italic" FontFamily="Segoe UI" Background="White" Foreground="Red" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="lblFoutDatum"  Content="Gelieve een datum in te vullen" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,90,0,0" FontStyle="Italic" FontFamily="Segoe UI" Background="White" Foreground="Red" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="lblFoutType"  Content="Gelieve een type te selecteren" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,126,0,0" FontStyle="Italic" FontFamily="Segoe UI" Background="White" Foreground="Red" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="lblFoutHerinnering"  Content="Gelieve een keuze te maken" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,164,0,0" FontStyle="Italic" FontFamily="Segoe UI" Background="White" Foreground="Red" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="lblFoutMelding"  Content="Gelieve een keuze te maken" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,259,0,0" FontStyle="Italic" FontFamily="Segoe UI" Background="White" Foreground="Red" FontSize="16" Visibility="Hidden"/>
+        <Label x:Name="lblAantalFouten"  Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,350,0,0" FontStyle="Italic" FontFamily="Segoe UI" Background="White" Foreground="Red" FontSize="16"/>
+
+    </Grid>
+</Window>
