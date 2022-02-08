@@ -1,0 +1,15 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\bin\Debug\WpfAlcohol.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\bin\Debug\WpfAlcohol.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\bin\Debug\WpfAlcohol.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\WpfAlcohol.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\MainWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\App.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\WpfAlcohol_MarkupCompile.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\WpfAlcohol_MarkupCompile.lref
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\MainWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\WpfAlcohol.g.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\WpfAlcohol.Properties.Resources.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\WpfAlcohol.csproj.GenerateResource.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\WpfAlcohol.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\WpfAlcohol.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfAlcohol\obj\Debug\WpfAlcohol.pdb
