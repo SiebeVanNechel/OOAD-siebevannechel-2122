@@ -24,5 +24,39 @@ namespace WpfAlcohol
         {
             InitializeComponent();
         }
+        double bier, wijn, whisky;
+ 
+        private void SliderBier_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            bier = Math.Round(SliderBier.Value);
+            lblBier.Content = bier + " glazen";
+            BerekenRechthoek();
+        }
+
+        private void SliderWijn_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            wijn = Math.Round(SliderWijn.Value);
+            lblWijn.Content = wijn + " glazen";
+            BerekenRechthoek();
+        }
+
+        private void SliderWhisky_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            whisky = Math.Round(SliderWhisky.Value);
+            lblWhisky.Content = whisky + " glazen";
+            BerekenRechthoek();
+        }
+
+        private void BerekenRechthoek()
+        {
+            //lengte bepalen
+            double aantalGlazen = bier + wijn + whisky;
+            rctGehalte.Width = aantalGlazen * 20;
+
+            //kleur bepalen
+            double r = 17 * aantalGlazen;
+            double g = 255 - (17 * aantalGlazen);
+            rctGehalte.Fill = new SolidColorBrush(Color.FromRgb(Convert.ToByte(r),Convert.ToByte(g), 0));
+        }
     }
 }
