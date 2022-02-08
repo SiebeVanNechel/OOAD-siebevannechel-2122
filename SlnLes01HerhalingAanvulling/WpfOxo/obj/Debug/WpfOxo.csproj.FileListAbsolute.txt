@@ -1,0 +1,15 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\bin\Debug\WpfOxo.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\bin\Debug\WpfOxo.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\bin\Debug\WpfOxo.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\WpfOxo.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\MainWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\App.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\WpfOxo_MarkupCompile.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\WpfOxo_MarkupCompile.lref
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\MainWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\WpfOxo.g.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\WpfOxo.Properties.Resources.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\WpfOxo.csproj.GenerateResource.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\WpfOxo.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\WpfOxo.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee\Kwartaal3\OOAD\github template\OOAD-siebevannechel-2122\SlnLes01HerhalingAanvulling\WpfOxo\obj\Debug\WpfOxo.pdb
