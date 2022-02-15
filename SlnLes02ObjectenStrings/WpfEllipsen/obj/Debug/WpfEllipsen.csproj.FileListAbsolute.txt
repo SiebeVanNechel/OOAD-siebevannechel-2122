@@ -1,0 +1,15 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\WpfEllipsen.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\MainWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\App.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\WpfEllipsen_MarkupCompile.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\WpfEllipsen_MarkupCompile.lref
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\bin\Debug\WpfEllipsen.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\bin\Debug\WpfEllipsen.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\bin\Debug\WpfEllipsen.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\MainWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\WpfEllipsen.g.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\WpfEllipsen.Properties.Resources.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\WpfEllipsen.csproj.GenerateResource.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\WpfEllipsen.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\WpfEllipsen.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfEllipsen\obj\Debug\WpfEllipsen.pdb

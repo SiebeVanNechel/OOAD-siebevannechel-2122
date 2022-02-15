@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfEllipsen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfEllipsen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas x:Name="canvas1" HorizontalAlignment="Left" Height="255" Margin="10,156,0,0" VerticalAlignment="Top" Width="711"/>
+        <Button x:Name="btnTekenen" Content="TEKENEN" HorizontalAlignment="Left" Margin="541,46,0,0" VerticalAlignment="Top"
+        Width="138" Height="30" FontWeight="Bold" Click="btnTekenen_Click"/>
+        <Label Content="Aantal cirkels" HorizontalAlignment="Left" Margin="22,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Minimum radius" HorizontalAlignment="Left" Margin="22,58,0,0" VerticalAlignment="Top"/>
+        <Label Content="Maximum radius" HorizontalAlignment="Left" Margin="22,89,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="SliderAantal" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="270" Margin="147,26,0,0" Maximum="50" ValueChanged="SliderAantal_ValueChanged" IsSnapToTickEnabled="True"/>
+        <Slider x:Name="SliderMin" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="270" Margin="147,57,0,0" Maximum="100" ValueChanged="SliderMin_ValueChanged" IsSnapToTickEnabled="True"/>
+        <Slider x:Name="SliderMax" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="270" Margin="147,89,0,0" Maximum="200" ValueChanged="SliderMax_ValueChanged" IsSnapToTickEnabled="True"/>
+        <Label x:Name="lblSlider1" Content="" HorizontalAlignment="Left" Margin="443,26,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSlider2" Content="" HorizontalAlignment="Left" Margin="443,58,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSlider3" Content="" HorizontalAlignment="Left" Margin="443,89,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.297,0.314"/>
+        <Label x:Name="lblFoutmelding" Content="" HorizontalAlignment="Left" Margin="522,89,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
