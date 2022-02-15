@@ -1,0 +1,15 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\bin\Debug\WpfPaswoordChecker.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\bin\Debug\WpfPaswoordChecker.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\bin\Debug\WpfPaswoordChecker.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\WpfPaswoordChecker.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\MainWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\App.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\WpfPaswoordChecker_MarkupCompile.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\WpfPaswoordChecker_MarkupCompile.lref
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\MainWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\WpfPaswoordChecker.g.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\WpfPaswoordChecker.Properties.Resources.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\WpfPaswoordChecker.csproj.GenerateResource.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\WpfPaswoordChecker.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\WpfPaswoordChecker.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfPaswoordChecker\obj\Debug\WpfPaswoordChecker.pdb
