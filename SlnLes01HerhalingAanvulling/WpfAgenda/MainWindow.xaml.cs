@@ -80,11 +80,11 @@ namespace WpfAgenda
 
             if (aantalfouten==1)
             {
-                lblAantalFouten.Content = $"Her formulier bevad {aantalfouten} fout";
+                lblAantalFouten.Content = $"Het formulier bevat {aantalfouten} fout";
             }
             else
             {
-                lblAantalFouten.Content = $"Her formulier bevad {aantalfouten} fouten";
+                lblAantalFouten.Content = $"Het formulier bevat {aantalfouten} fouten";
             }
         }
     }
