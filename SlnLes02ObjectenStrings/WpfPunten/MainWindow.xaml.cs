@@ -29,20 +29,20 @@ namespace WpfPunten
         {
             ListBoxItem item = new ListBoxItem();
             string naam = txtNaam.Text;
-            string punt = txtPunt.Text;
-           
+            string punt = txtPunt.Text + "/100";
+            item.Content = $"{naam} - {punt}";
+
             if (ListBoxPunten.SelectedIndex!=-1)
             {
                 string[] geselecteerd = new string[3];
                 geselecteerd = ListBoxPunten.SelectedItem.ToString().Split(':', '-');
                 if (naam == geselecteerd[1])
                 {
-                    ListBoxPunten.Items[ListBoxPunten.SelectedIndex] = $"{naam} - {punt}";
+                    ListBoxPunten.Items[ListBoxPunten.SelectedIndex] = item;
                 }
             }
             else
             {
-                item.Content = $"{naam} - {punt}/100";
                 ListBoxPunten.Items.Add(item);
             }  
 
