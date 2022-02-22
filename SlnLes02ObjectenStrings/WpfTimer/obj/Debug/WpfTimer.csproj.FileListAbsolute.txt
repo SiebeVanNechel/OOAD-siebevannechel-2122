@@ -1,0 +1,15 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\bin\Debug\WpfTimer.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\bin\Debug\WpfTimer.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\bin\Debug\WpfTimer.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\WpfTimer.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\MainWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\App.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\WpfTimer_MarkupCompile.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\WpfTimer_MarkupCompile.lref
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\MainWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\WpfTimer.g.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\WpfTimer.Properties.Resources.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\WpfTimer.csproj.GenerateResource.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\WpfTimer.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\WpfTimer.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes02ObjectenStrings\WpfTimer\obj\Debug\WpfTimer.pdb
