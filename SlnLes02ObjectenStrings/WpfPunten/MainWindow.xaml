@@ -17,7 +17,7 @@
         <TextBox x:Name="txtPunt" HorizontalAlignment="Left" Height="23" Margin="138,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txtInput_TextChanged"/>
         <Button x:Name="btnToevoegen" Content="Toevoegen" HorizontalAlignment="Left" Margin="276,32,0,0" VerticalAlignment="Top" Width="145" Height="55" FontSize="14" Click="btnToevoegen_Click" IsEnabled="False"/>
         <Label Content="Filter op:" HorizontalAlignment="Left" Margin="16,115,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <TextBox x:Name="txtFilter" HorizontalAlignment="Left" Height="23" Margin="85,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="336"/>
+        <TextBox x:Name="txtFilter" HorizontalAlignment="Left" Height="23" Margin="85,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="336" TextChanged="txtFilter_TextChanged"/>
         <ListBox x:Name="ListBoxPunten" HorizontalAlignment="Left" Height="198" Margin="16,171,0,0" VerticalAlignment="Top" Width="405" SelectionChanged="ListBoxPunten_SelectionChanged"/>
         <Button x:Name="btnVerwijder" Content="Verwijder" HorizontalAlignment="Left" Margin="16,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="405" FontSize="14" IsEnabled="False" Click="btnVerwijder_Click"/>
 

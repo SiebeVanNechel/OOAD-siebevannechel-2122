@@ -27,9 +27,11 @@ namespace WpfPunten
 
         private void btnToevoegen_Click(object sender, RoutedEventArgs e)
         {
+            ListBoxItem item = new ListBoxItem();
             string naam = txtNaam.Text;
             string punt = txtPunt.Text;
-            ListBoxPunten.Items.Add($"{naam} - {punt}/100");
+            item.Content= $"{naam} - {punt}/100";
+            ListBoxPunten.Items.Add(item);
 
             naam = "";
             punt = "";
@@ -64,6 +66,19 @@ namespace WpfPunten
             ListBoxPunten.Items.Remove(ListBoxPunten.SelectedItem);
             txtNaam.Text = "";
             txtPunt.Text = "";
+        }
+
+        private void txtFilter_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            foreach (ListBoxItem item in ListBoxPunten.Items)
+            {
+                string content = Convert.ToString(item.Content).ToLower();
+                if (!content.Contains(txtFilter.Text.ToLower()))
+                {
+                    item.Visibility = Visibility.Hidden;
+                }
+                else item.Visibility = Visibility.Visible;
+            }
         }
     }
 }
