@@ -36,7 +36,6 @@ namespace WpfPaswoordChecker
         private bool ControleerWachtwoord()
         {
             SolidColorBrush groen = new SolidColorBrush(Colors.Green);
-            bool hulp = true;
             bool[] controle = new bool[5];
 
             //alle controles op false zetten
@@ -55,27 +54,27 @@ namespace WpfPaswoordChecker
             foreach (char karakter in txtWachtwoord.Text)
             {
                 //Minimum één kleine letter
-                if (System.Convert.ToInt32(karakter) < 123 && System.Convert.ToInt32(karakter)>96)
+                if (Convert.ToInt32(karakter) < 123 && Convert.ToInt32(karakter)>96)
                 {
                     controle[1] = true;
                     lblKleineLetter.Foreground = groen;
                 }
                 //Minimum één hoofdletter
-                if (System.Convert.ToInt32(karakter) < 91 && System.Convert.ToInt32(karakter) > 64)
+                if (Convert.ToInt32(karakter) < 91 && Convert.ToInt32(karakter) > 64)
                 {
                     controle[2] = true;
                     lblHoofdletter.Foreground = groen;
                 }
                 //Minimum één cijfer
-                if (System.Convert.ToInt32(karakter) < 58 && System.Convert.ToInt32(karakter) > 47)
+                if (Convert.ToInt32(karakter) < 58 && Convert.ToInt32(karakter) > 47)
                 {
                     controle[3] = true;
                     lblCijfer.Foreground = groen;
                 }
                 //Minimum één vreemd karakter
-                if (System.Convert.ToInt32(karakter) < 48 && System.Convert.ToInt32(karakter) > 32 || 
-                    System.Convert.ToInt32(karakter) < 65 && System.Convert.ToInt32(karakter) > 57 ||
-                    System.Convert.ToInt32(karakter) < 127 && System.Convert.ToInt32(karakter) > 122)
+                if (Convert.ToInt32(karakter) < 48 && Convert.ToInt32(karakter) > 32 || 
+                    Convert.ToInt32(karakter) < 65 && Convert.ToInt32(karakter) > 57 ||
+                    Convert.ToInt32(karakter) < 127 && Convert.ToInt32(karakter) > 122)
                 {
                     controle[4] = true;
                     lblVreemdKarakter.Foreground = groen;
@@ -86,10 +85,10 @@ namespace WpfPaswoordChecker
             {
                 if (item == false)
                 {
-                    hulp=false;
+                    return false;
                 }
             }
-            return hulp;
+            return true;
         }
 
         private void ResetError(string w, SolidColorBrush rood)
