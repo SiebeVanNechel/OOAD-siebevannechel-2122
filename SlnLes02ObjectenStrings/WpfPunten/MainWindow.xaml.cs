@@ -30,8 +30,21 @@ namespace WpfPunten
             ListBoxItem item = new ListBoxItem();
             string naam = txtNaam.Text;
             string punt = txtPunt.Text;
-            item.Content= $"{naam} - {punt}/100";
-            ListBoxPunten.Items.Add(item);
+           
+            if (ListBoxPunten.SelectedIndex!=-1)
+            {
+                string[] geselecteerd = new string[3];
+                geselecteerd = ListBoxPunten.SelectedItem.ToString().Split(':', '-');
+                if (naam == geselecteerd[1])
+                {
+                    ListBoxPunten.Items[ListBoxPunten.SelectedIndex] = $"{naam} - {punt}";
+                }
+            }
+            else
+            {
+                item.Content = $"{naam} - {punt}/100";
+                ListBoxPunten.Items.Add(item);
+            }  
 
             naam = "";
             punt = "";
@@ -53,10 +66,10 @@ namespace WpfPunten
         {
             if (ListBoxPunten.SelectedItem != null)
             {
-                string[] geselecteerd= new string[2];
-                geselecteerd = ListBoxPunten.SelectedItem.ToString().Split('-');
-                txtNaam.Text = geselecteerd[0];
-                txtPunt.Text = geselecteerd[1];
+                string[] geselecteerd= new string[3];
+                geselecteerd = ListBoxPunten.SelectedItem.ToString().Split(':','-');
+                txtNaam.Text = geselecteerd[1];
+                txtPunt.Text = geselecteerd[2];
                 btnVerwijder.IsEnabled = true;
             }
         }
