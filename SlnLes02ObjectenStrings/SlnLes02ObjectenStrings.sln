@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfEllipsen", "WpfEllipsen\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTimer", "WpfTimer\WpfTimer.csproj", "{0ECD5809-053C-4CA7-90CB-137027FBEBE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPunten", "WpfPunten\WpfPunten.csproj", "{2A0C218E-5499-49ED-8471-A0D3473F724C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0ECD5809-053C-4CA7-90CB-137027FBEBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ECD5809-053C-4CA7-90CB-137027FBEBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ECD5809-053C-4CA7-90CB-137027FBEBE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A0C218E-5499-49ED-8471-A0D3473F724C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0C218E-5499-49ED-8471-A0D3473F724C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A0C218E-5499-49ED-8471-A0D3473F724C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A0C218E-5499-49ED-8471-A0D3473F724C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
