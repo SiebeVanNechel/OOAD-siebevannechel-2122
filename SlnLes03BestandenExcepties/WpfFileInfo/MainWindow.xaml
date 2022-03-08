@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfFileInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFileInfo"
+        mc:Ignorable="d"
+        Title="Bestandsinfo" Height="350" Width="400">
+    <Grid>
+        <Button x:Name="btnKiesBestand" Content="Kies bestand... " HorizontalAlignment="Left" Margin="53,30,0,0" VerticalAlignment="Top" Width="134" Height="41" Click="btnKiesBestand_Click"/>
+        <Label x:Name="lblBestandsnaam" Content="Bestandsnaam: " HorizontalAlignment="Left" Margin="53,105,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblExtentie" Content="Extentie: " HorizontalAlignment="Left" Margin="53,136,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbldatum" Content="Gemaakt op: " HorizontalAlignment="Left" Margin="53,167,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblMapnaam" Content="Mapnaam: " HorizontalAlignment="Left" Margin="53,198,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAantalWoorden" Content="Aantal woorden: " HorizontalAlignment="Left" Margin="53,229,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblMeestVoorkomend" Content="Meest voorkomend: " HorizontalAlignment="Left" Margin="53,260,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

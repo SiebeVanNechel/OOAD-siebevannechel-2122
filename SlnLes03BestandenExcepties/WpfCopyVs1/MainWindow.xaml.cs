@@ -49,14 +49,21 @@ namespace WpfCopyVs1
             if (!File.Exists(filePath)) return;
 
             // open stream and start writing
-            using (StreamWriter writer = File.CreateText(filePathSchrijven))
+            try
             {
-                foreach (string line in lines)
+                using (StreamWriter writer = File.CreateText(filePathSchrijven))
                 {
-                    writer.WriteLine(line);
-                }
-            } // stream closes automatically
-            lblBevestiging.Content = "Bestand is overgezet";
+                    foreach (string line in lines)
+                    {
+                        writer.WriteLine(line);
+                    }
+                } // stream closes automatically
+                lblBevestiging.Content = "Bestand is overgezet";
+            }
+            catch (IOException)
+            {
+                lblBevestiging.Content = "Error reading " + filePath;
+            }
         }
     }
 }

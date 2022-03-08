@@ -1,0 +1,15 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\bin\Debug\WpfFileInfo.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\bin\Debug\WpfFileInfo.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\bin\Debug\WpfFileInfo.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\MainWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\App.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\WpfFileInfo_MarkupCompile.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\WpfFileInfo_MarkupCompile.lref
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\MainWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\WpfFileInfo.g.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\WpfFileInfo.Properties.Resources.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\WpfFileInfo.csproj.GenerateResource.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\WpfFileInfo.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\WpfFileInfo.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\WpfFileInfo.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfFileInfo\obj\Debug\WpfFileInfo.csproj.AssemblyReference.cache
