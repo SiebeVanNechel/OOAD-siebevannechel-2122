@@ -42,7 +42,7 @@ namespace WpfFileInfo
 
                 string fullPath = System.IO.Path.GetDirectoryName(chosenFileName);
                 string[] folders = fullPath.Split('\\');
-                MessageBox.Show(folders.Length.ToString());
+                //MessageBox.Show(folders.Length.ToString());
                 string folder = folders[folders.Length - 1];
                 lblMapnaam.Content += folder;
             }
