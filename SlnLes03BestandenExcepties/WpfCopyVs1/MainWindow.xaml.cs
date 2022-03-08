@@ -46,6 +46,7 @@ namespace WpfCopyVs1
             List<string> linesSchrijven = new List<string>();
             string folderPathSchrijven = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             string filePathSchrijven = System.IO.Path.Combine(folderPathSchrijven, FileOut);
+            if (!File.Exists(filePath)) return;
 
             // open stream and start writing
             using (StreamWriter writer = File.CreateText(filePathSchrijven))
