@@ -1,0 +1,15 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\bin\Debug\WpfCopyVs1.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\bin\Debug\WpfCopyVs1.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\bin\Debug\WpfCopyVs1.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\WpfCopyVs1.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\MainWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\App.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\WpfCopyVs1_MarkupCompile.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\WpfCopyVs1_MarkupCompile.lref
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\MainWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\WpfCopyVs1.g.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\WpfCopyVs1.Properties.Resources.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\WpfCopyVs1.csproj.GenerateResource.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\WpfCopyVs1.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\WpfCopyVs1.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes03BestandenExcepties\WpfCopyVs1\obj\Debug\WpfCopyVs1.pdb
