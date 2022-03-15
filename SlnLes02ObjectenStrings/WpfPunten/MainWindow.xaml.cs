@@ -77,8 +77,6 @@ namespace WpfPunten
         private void btnVerwijder_Click(object sender, RoutedEventArgs e)
         {
             ListBoxPunten.Items.Remove(ListBoxPunten.SelectedItem);
-            txtNaam.Text = "";
-            txtPunt.Text = "";
         }
 
         private void txtFilter_TextChanged(object sender, TextChangedEventArgs e)
@@ -86,11 +84,8 @@ namespace WpfPunten
             foreach (ListBoxItem item in ListBoxPunten.Items)
             {
                 string content = Convert.ToString(item.Content).ToLower();
-                if (!content.Contains(txtFilter.Text.ToLower()))
-                {
-                    item.Visibility = Visibility.Hidden;
-                }
-                else item.Visibility = Visibility.Visible;
+                item.Visibility= content.Contains(txtFilter.Text.ToLower()) ? Visibility.Visible : Visibility.Hidden;
+
             }
         }
     }
