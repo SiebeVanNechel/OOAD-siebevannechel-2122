@@ -24,5 +24,17 @@ namespace WpfFocusTab
         {
             InitializeComponent();
         }
+
+        private void txt_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Background = Brushes.GreenYellow;
+        }
+
+        private void txt_LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Background = Brushes.White;
+        }
     }
 }

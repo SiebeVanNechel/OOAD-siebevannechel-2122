@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCarConfigurator", "WpfCa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "notepad", "WpfNotePad\notepad.csproj", "{5B4B29F8-704D-49C7-94C0-2BD761DD30C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfFocusTab", "WpfFocusTab\WpfFocusTab.csproj", "{CC02D6C8-9689-40DC-B157-30D9D9E5FD2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5B4B29F8-704D-49C7-94C0-2BD761DD30C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B4B29F8-704D-49C7-94C0-2BD761DD30C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B4B29F8-704D-49C7-94C0-2BD761DD30C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC02D6C8-9689-40DC-B157-30D9D9E5FD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC02D6C8-9689-40DC-B157-30D9D9E5FD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC02D6C8-9689-40DC-B157-30D9D9E5FD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC02D6C8-9689-40DC-B157-30D9D9E5FD2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
