@@ -11,16 +11,16 @@
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_File">
                     <MenuItem Header="New" />
-                    <MenuItem Header="Open..." />
-                    <MenuItem Header="Save" IsEnabled="False" />
-                    <MenuItem Header="Save _As..." IsEnabled="False" />
+                    <MenuItem x:Name="btnOpenMenuItem" Header="Open..." Click="btnOpenMenuItem_Click" />
+                    <MenuItem x:Name="btnSave" Header="Save" IsEnabled="False" Click="btnSave_Click" />
+                    <MenuItem x:Name="btnSaveAs" Header="Save _As..." IsEnabled="False" Click="btnSaveAs_Click" />
                     <Separator />
-                    <MenuItem Header="Exit"/>
+                    <MenuItem x:Name="btnExitMenu" Header="Exit" Click="btnExitMenu_Click"/>
                 </MenuItem>
                 <MenuItem Header="Edit">
-                    <MenuItem Header="Cut" IsEnabled="False" />
-                    <MenuItem Header="Copy" IsEnabled="False" />
-                    <MenuItem Header="Paste" IsEnabled="False" />
+                    <MenuItem x:Name="btnCut" Header="Cut" IsEnabled="False" Click="btnCut_Click" />
+                    <MenuItem x:Name="btnCopy" Header="Copy" IsEnabled="False" Click="btnCopy_Click" />
+                    <MenuItem x:Name="btnPaste" Header="Paste" IsEnabled="False" Click="btnPaste_Click" />
                 </MenuItem>
                 <MenuItem Header="_Help">
                     <MenuItem Header="_About" Click="MenuItem_Click" />
@@ -28,12 +28,12 @@
             </Menu>
             
             <StatusBar DockPanel.Dock="Bottom">
-                <Label Content="#chars: 0" Padding="10,2" />
+                <Label x:Name="lblChars" Content="#chars: 0" Padding="10,2" />
             </StatusBar>
             
             <TabControl DockPanel.Dock="Left" SelectedIndex="0" >
-                <TabItem Header="Untitled" Margin="0" Padding="10,5">
-                    <TextBox Padding="10" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"></TextBox>
+                <TabItem x:Name="Tabheader" Header="Untitled" Margin="0" Padding="10,5">
+                    <TextBox x:Name="txtInput" Padding="10" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" SelectionChanged="txtInput_SelectionChanged" TextChanged="txtInput_TextChanged"></TextBox>
                 </TabItem>
             </TabControl>
         </DockPanel>
