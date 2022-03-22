@@ -26,14 +26,14 @@
             <ComboBoxItem Content="Mulsanne (65300 euro)" HorizontalAlignment="Left" Width="200" FontSize="14"/>
         </ComboBox>
         <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1">
-            <RadioButton x:Name="RadiobtnBlauw" Content="blauw" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Center" GroupName="Kleur" FontSize="14" Checked="RadiobtnBlauw_Checked" Unchecked="RadiobtnBlauw_Unchecked" />
-            <RadioButton x:Name="RadiobtnGroen" Content="groen (+250 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Center" GroupName="Kleur" FontSize="14" Checked="RadiobtnGroen_Checked"/>
-            <RadioButton x:Name="RadiobtnRood" Content="rood (+700 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment= "Center" GroupName="Kleur" FontSize="14" Checked="RadiobtnRood_Checked"/>
+            <RadioButton x:Name="RadiobtnBlauw" Content="blauw" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Center" GroupName="Kleur" FontSize="14" Checked="RadiobtnBlauw_Checked" Unchecked="Radiobtn_Unchecked" />
+            <RadioButton x:Name="RadiobtnGroen" Content="groen (+250 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Center" GroupName="Kleur" FontSize="14" Checked="Radiobtn_Checked"/>
+            <RadioButton x:Name="RadiobtnRood" Content="rood (+700 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment= "Center" GroupName="Kleur" FontSize="14" Checked="Radiobtn_Checked"/>
         </StackPanel>
         <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1">
-            <CheckBox x:Name="CheckAudio" Content="Bose audio speakers (+1250 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Checked="CheckAudio_Checked" Unchecked="CheckAudio_Unchecked"/>
-            <CheckBox x:Name="CheckMatjes" Content="Deluxe matjes (+450 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Checked="CheckMatjes_Checked" Unchecked="CheckMatjes_Unchecked"/>
-            <CheckBox x:Name="CheckVelgen" Content="Aluminium velgen (+300 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Checked="CheckVelgen_Checked" Unchecked="CheckVelgen_Unchecked"/>
+            <CheckBox x:Name="CheckAudio" Content="Bose audio speakers (+1250 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Checked="CheckOptie_Checked" Unchecked="CheckOptie_Unchecked"/>
+            <CheckBox x:Name="CheckMatjes" Content="Deluxe matjes (+450 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Checked="CheckOptie_Checked" Unchecked="CheckOptie_Unchecked"/>
+            <CheckBox x:Name="CheckVelgen" Content="Aluminium velgen (+300 euro)" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Checked="CheckOptie_Checked" Unchecked="CheckOptie_Unchecked"/>
         </StackPanel>
         <Label x:Name="lblPrijs" Content="" HorizontalAlignment="Left" Margin="10,0,0,20" Grid.Row="1" VerticalAlignment="Bottom" Grid.Column="1" FontSize="14" Height="29" Grid.RowSpan="2" />
         <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="2">

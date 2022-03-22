@@ -34,65 +34,19 @@ namespace WpfCarConfigurator
             BerekenPrijs();
         }
 
-        private void RadiobtnBlauw_Checked(object sender, RoutedEventArgs e)
-        {
-            UpdateUI();
-            BerekenPrijs();
-        }
 
-        private void RadiobtnGroen_Checked(object sender, RoutedEventArgs e)
+        private void Radiobtn_Checked(object sender, RoutedEventArgs e)
         {
             UpdateUI(); 
             BerekenPrijs();
         }
 
-        private void RadiobtnRood_Checked(object sender, RoutedEventArgs e)
+        private void CheckOptie_Unchecked(object sender, RoutedEventArgs e)
         {
             UpdateUI();
             BerekenPrijs();
         }
 
-        private void CheckAudio_Checked(object sender, RoutedEventArgs e)
-        {
-            UpdateUI();
-            BerekenPrijs();
-        }
-
-        private void CheckMatjes_Checked(object sender, RoutedEventArgs e)
-        {
-            UpdateUI();
-            BerekenPrijs();
-        }
-
-        private void CheckVelgen_Checked(object sender, RoutedEventArgs e)
-        {
-            UpdateUI();
-            BerekenPrijs();
-        }
-
-        private void CheckAudio_Unchecked(object sender, RoutedEventArgs e)
-        {
-            UpdateUI();
-            BerekenPrijs();
-        }
-
-        private void CheckMatjes_Unchecked(object sender, RoutedEventArgs e)
-        {
-            UpdateUI();
-            BerekenPrijs();
-        }
-
-        private void CheckVelgen_Unchecked(object sender, RoutedEventArgs e)
-        {
-            UpdateUI();
-            BerekenPrijs();
-        }
-
-        private void RadiobtnBlauw_Unchecked(object sender, RoutedEventArgs e)
-        {
-            UpdateUI();
-            BerekenPrijs();
-        }
 
         private void UpdateUI()
         {
