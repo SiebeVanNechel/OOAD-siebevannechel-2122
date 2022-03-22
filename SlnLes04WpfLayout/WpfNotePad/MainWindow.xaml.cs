@@ -24,6 +24,7 @@ namespace WpfNotePad
     {
         private string currentFilePath = "";
         private string initialfolderPath;
+        private bool opgeslagen;
         public MainWindow()
         {
             InitializeComponent();
@@ -84,6 +85,7 @@ namespace WpfNotePad
                 btnSave.IsEnabled = true;
                 btnSaveAs.IsEnabled = true;
             }
+            opgeslagen = false;
         }
 
         private void btnOpenMenuItem_Click(object sender, RoutedEventArgs e)
@@ -103,6 +105,7 @@ namespace WpfNotePad
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+
             if (currentFilePath=="")
             {
                 SaveFileDialog dialog = new SaveFileDialog();
@@ -113,9 +116,20 @@ namespace WpfNotePad
                 }
                 Tabheader.Header = new DirectoryInfo(dialog.SafeFileName).ToString();
             }
-            StreamWriter writer = File.CreateText(currentFilePath);
-            writer.Write(txtInput.Text);
-            writer.Close();
+            try
+            {
+                StreamWriter writer = File.CreateText(currentFilePath);
+                writer.Write(txtInput.Text);
+                writer.Close();
+                opgeslagen = true;
+            }
+            catch (Exception)
+            {
+                if (MessageBox.Show("er is een fout opgetreden" + currentFilePath, "Wil ja alsnog doorgaan", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                {
+                    opgeslagen = false;
+                }
+            }
         }
 
         private void btnSaveAs_Click(object sender, RoutedEventArgs e)
@@ -130,12 +144,36 @@ namespace WpfNotePad
                 writer.Write(txtInput.Text);
                 Tabheader.Header = new DirectoryInfo(dialog.SafeFileName).ToString();
                 writer.Close();
+                try
+                {
+                    writer.Write(txtInput.Text);
+                    writer.Close();
+                    opgeslagen = true;
+                }
+                catch (Exception)
+                {
+                    if (MessageBox.Show("er is een fout opgetreden" + currentFilePath, "Wil ja alsnog doorgaan", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                    {
+                        opgeslagen = false;
+                    }
+                }
             }
+
         }
 
         private void btnExitMenu_Click(object sender, RoutedEventArgs e)
         {
-            Environment.Exit(0);
+            if (!opgeslagen)
+            {
+                if (MessageBox.Show("als je nu het programma verlaat, gaan wijzigingen verloren", "Ben je zeker?", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                {
+                    Environment.Exit(0);
+                }
+            }
+            else
+            {
+                Environment.Exit(0);
+            }
         }
     }
 }
