@@ -40,10 +40,10 @@ namespace ConsoleKaartspel1
         }
 
         //Constructor nummer + kleur
-        public Kaart( int kleur,int nummer)
+        public Kaart(char kleur,int nummer)
         {
-            _nummer = Nummer;
-            _kleur = Kleur;
+            Nummer = nummer;
+            Kleur = kleur;
         }
     }
 }
