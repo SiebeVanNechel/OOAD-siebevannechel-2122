@@ -1,0 +1,7 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleKaartspel1\bin\Debug\ConsoleKaartspel1.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleKaartspel1\bin\Debug\ConsoleKaartspel1.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleKaartspel1\bin\Debug\ConsoleKaartspel1.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleKaartspel1\obj\Debug\ConsoleKaartspel1.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleKaartspel1\obj\Debug\ConsoleKaartspel1.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleKaartspel1\obj\Debug\ConsoleKaartspel1.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleKaartspel1\obj\Debug\ConsoleKaartspel1.pdb

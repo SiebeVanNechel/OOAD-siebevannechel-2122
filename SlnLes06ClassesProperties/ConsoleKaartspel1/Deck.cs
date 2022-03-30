@@ -19,9 +19,9 @@ namespace ConsoleKaartspel1
             char[] soortKaart = { 'C', 'S', 'H', 'D' };
             for (int i = 0; i < soortKaart.Length; i++)
             {
-                for (int j = 0; j < 13; j++)
+                for (int j = 1; j <= 13; j++)
                 {
-                    Kaart newKaart = new Kaart(soortKaart[j], i);
+                    Kaart newKaart = new Kaart(soortKaart[i], j);
                     Kaarten.Add(newKaart);
                 }
             }

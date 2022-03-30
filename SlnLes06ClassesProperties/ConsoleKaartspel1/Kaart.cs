@@ -31,7 +31,7 @@ namespace ConsoleKaartspel1
             get { return _kleur; }
             set
             {
-                if (value == 'C' || value == 'S' || value == 'H' || value == 'D')
+                if (value != 'C' && value != 'S' && value != 'H' && value != 'D')
                 {
                     throw new ArgumentOutOfRangeException($"Kleur moet C, S, H of D zijn.");
                 }
