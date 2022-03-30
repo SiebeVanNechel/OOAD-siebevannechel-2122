@@ -8,5 +8,6 @@ namespace ConsoleKaartspel1
 {
     class Speler
     {
+
     }
 }
