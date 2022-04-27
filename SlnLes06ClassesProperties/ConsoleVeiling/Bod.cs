@@ -11,9 +11,27 @@ namespace ConsoleVeiling
         private int _prijsbod;
         private string _naamBieder = "";
         private string _naamItem = "";
-        .
+        
         //Properties
-        public int PrijsBod { get; set; }
+        public int PrijsBod
+        {
+            get { return _prijsbod; }
+            set
+            {
+                try
+                {
+                    _prijsbod = value;
+                    if(_prijsbod < 0)
+                    {
+                        throw new ArgumentException("Prijs mag niet negatief zijn.");
+                    }
+                }
+                catch(Exception ex)
+                {
+                    throw new ArgumentException("Prijs is ongeldig");
+                }
+            }
+        }
         public string NaamBieder
         {
             get { return _naamBieder; }
