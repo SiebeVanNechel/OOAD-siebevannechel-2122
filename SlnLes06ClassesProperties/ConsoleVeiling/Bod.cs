@@ -8,74 +8,33 @@ namespace ConsoleVeiling
 {
     class Bod
     {
-        private int _prijsbod;
-        private string _naamBieder = "";
-        private string _naamItem = "";
+        private string _naamBieder;
         
         //Properties
-        public int PrijsBod
-        {
-            get { return _prijsbod; }
-            set
-            {
-                try
-                {
-                    _prijsbod = value;
-                    if(_prijsbod < 0)
-                    {
-                        throw new ArgumentException("Prijs mag niet negatief zijn.");
-                    }
-                }
-                catch(Exception ex)
-                {
-                    throw new ArgumentException("Prijs is ongeldig");
-                }
-            }
-        }
         public string NaamBieder
         {
             get { return _naamBieder; }
             set
             {
-                try
+                if (_naamBieder == "")
                 {
-                    if (_naamBieder == "")
-                    {
-                        throw new ArgumentException("Naam is leeg");
-                    }
+                    throw new ArgumentException("Naam is leeg");
                 }
-                catch (Exception ex)
+                else
                 {
-                    throw new ArgumentException("Naam bieder is ongeldig");
+                    _naamBieder = value;
                 }
             }
         }
-        public string NaamItem
-        {
-            get { return _naamItem; }
-            set
-            {
-                try
-                {
-                    if (_naamItem == "")
-                    {
-                        throw new ArgumentException("Naam is leeg");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    throw new ArgumentException("Naam item is ongeldig");
-                }
-            }
-        }
+        public Item Item { get; set; }
 
 
         //Constructoren
-        public Bod(int prijsbod, string naambieder, string naamitem)
+        public Bod(int bedrag, string naambieder, Item item)
         {
-            PrijsBod = prijsbod;
+            item.Bedrag = bedrag;
             NaamBieder = naambieder;
-            NaamItem = naamitem;
+            Item = item;
         }
     }
 }

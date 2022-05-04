@@ -37,21 +37,21 @@ namespace ConsoleVeiling
                 while (verderBieden)
                 {
                     int aantalGestopt = 0;
-                    Console.WriteLine("== Bieden op " + item.NaamItem + " vanaf " + item.MinPrijs + " euro. ==");
+                    Console.WriteLine("== Bieden op " + item.Voorwerp + " vanaf " + item.Bedrag + " euro. ==");
                     foreach (Koper koper in kopers)
                     {
-                        Console.WriteLine(koper.NaamKoper + ": Wil je hoger bieden dan " + item.MinPrijs + "? (ja/nee)");
+                        Console.WriteLine(koper.NaamKoper + ": Wil je hoger bieden dan " + item.Bedrag + "? (ja/nee)");
                         string hogerBieden = Console.ReadLine();
                         if (hogerBieden == "ja")
                         {
-                            Console.WriteLine("Geef een hoger bedrag in dan " + item.MinPrijs);
+                            Console.WriteLine("Geef een hoger bedrag in dan " + item.Bedrag);
                             int nieuwMinPrijs = int.Parse(Console.ReadLine());
-                            while(nieuwMinPrijs < item.MinPrijs)
+                            while(nieuwMinPrijs < item.Bedrag)
                             {
-                                Console.WriteLine("Geef een hoger bedrag in dan " + item.MinPrijs);
+                                Console.WriteLine("Geef een hoger bedrag in dan " + item.Bedrag);
                                 nieuwMinPrijs = int.Parse(Console.ReadLine());
                             }
-                            item.MinPrijs = nieuwMinPrijs;
+                            item.Bedrag = nieuwMinPrijs;
                             naamBieder = koper.NaamKoper;
                         }
                         else
@@ -63,13 +63,13 @@ namespace ConsoleVeiling
                             }
                         }
                     }
-                    bieders.Add(new Bod(item.MinPrijs, naamBieder, item.NaamItem));
+                    bieders.Add(new Bod(item.Bedrag, naamBieder, item));
                 }
-                Console.WriteLine(item.NaamItem + " is verkocht aan " + item.MinPrijs + " euro."+ "\r\n");
+                Console.WriteLine(item.Voorwerp + " is verkocht aan " + item.Bedrag + " euro."+ "\r\n");
             }
             foreach(Bod bod in bieders)
             {
-                Console.WriteLine("## " + bod.NaamItem + " is verkocht aan " + bod.NaamBieder + " voor " + bod.PrijsBod + " euro. ##");
+                Console.WriteLine("## " + bod.Item.Voorwerp + " is verkocht aan " + bod.NaamBieder + " voor " + bod.Item.Bedrag + " euro. ##");
             }
             Console.ReadLine();
         }

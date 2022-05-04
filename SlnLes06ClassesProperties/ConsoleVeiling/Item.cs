@@ -8,56 +8,46 @@ namespace ConsoleVeiling
 {
     class Item
     {
-        private string _item = "";
-        private int _minPrijs;
+        private string _item;
+        private int _bedrag;
 
         //Propertie Item
-        public string NaamItem
+        public string Voorwerp
         {
             get { return _item; }
             set
             {
-                try
+                if (_item == "")
                 {
-                    if (_item == "")
-                    {
-                        throw new ArgumentException("Item is leeg");
-                    }
+                    throw new ArgumentException("Item is leeg");
                 }
-                catch (Exception ex)
+                else
                 {
-                    throw new ArgumentException("Item is ongeldig");
+                    _item = value;
                 }
             }
         }
 
         //Propertie Prijs
-        public int MinPrijs
+        public int Bedrag
         {
-            get { return _minPrijs; }
+            get { return _bedrag; }
             set
-            {
-                try
+            {   
+                if (_bedrag < 0)
                 {
-                    _minPrijs = value;
-                    if (_minPrijs < 0)
-                    {
-                        throw new ArgumentException("Prijs mag niet negatief zijn.");
-                    }
+                    throw new ArgumentException("Prijs mag niet negatief zijn.");
                 }
-                catch (Exception ex)
-                {
-                    throw new ArgumentException("Prijs is ongeldig");
-                }
+                _bedrag = value;
             }
         }
 
 
         //Constructor
-        public Item(string naamItem, int minPrijs)
+        public Item(string item, int bedrag)
         {
-            NaamItem = naamItem;
-            MinPrijs = minPrijs;
+            _item = item;
+            Bedrag = bedrag;
         }
     }
 }

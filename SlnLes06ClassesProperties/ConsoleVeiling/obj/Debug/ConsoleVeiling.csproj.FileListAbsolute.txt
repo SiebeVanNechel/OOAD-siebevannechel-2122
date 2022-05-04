@@ -5,3 +5,10 @@ C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe
 C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\obj\Debug\ConsoleVeiling.csproj.CoreCompileInputs.cache
 C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\obj\Debug\ConsoleVeiling.exe
 C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\obj\Debug\ConsoleVeiling.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\bin\Debug\ConsoleVeiling.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\bin\Debug\ConsoleVeiling.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\bin\Debug\ConsoleVeiling.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\obj\Debug\ConsoleVeiling.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\obj\Debug\ConsoleVeiling.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\obj\Debug\ConsoleVeiling.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes06ClassesProperties\ConsoleVeiling\obj\Debug\ConsoleVeiling.pdb

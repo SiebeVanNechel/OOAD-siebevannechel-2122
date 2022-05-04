@@ -8,22 +8,19 @@ namespace ConsoleVeiling
 {
     class Koper
     {
-        private string _naamKoper = "";
+        private string _naamKoper;
         //Properties
         public string NaamKoper {
             get { return _naamKoper; }
             set
             {
-                try
+                if (_naamKoper == "")
                 {
-                    if (_naamKoper == "")
-                    {
-                        throw new ArgumentException("Naam is leeg");
-                    }
+                    throw new ArgumentException("Naam is leeg");
                 }
-                catch(Exception ex)
+                else
                 {
-                    throw new ArgumentException("Naam is ongeldig");
+                    _naamKoper = value;
                 }
             } 
         }
