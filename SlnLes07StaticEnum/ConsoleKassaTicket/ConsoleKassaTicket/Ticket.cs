@@ -31,7 +31,7 @@ Uw kassier: {kassierster}
             foreach (Product product in producten)
             {
                 Console.WriteLine(product);
-                totaal += (decimal)product.eenheidsprijs;
+                product.ToString();
             }
             Console.WriteLine("\r\n" + "-----------");
             Console.WriteLine("Visa kosten: " + extraKosten);
