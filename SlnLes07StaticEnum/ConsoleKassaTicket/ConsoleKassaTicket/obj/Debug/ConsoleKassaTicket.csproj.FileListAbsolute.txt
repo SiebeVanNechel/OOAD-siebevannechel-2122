@@ -1,0 +1,7 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes07StaticEnum\ConsoleKassaTicket\ConsoleKassaTicket\bin\Debug\ConsoleKassaTicket.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes07StaticEnum\ConsoleKassaTicket\ConsoleKassaTicket\bin\Debug\ConsoleKassaTicket.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes07StaticEnum\ConsoleKassaTicket\ConsoleKassaTicket\bin\Debug\ConsoleKassaTicket.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes07StaticEnum\ConsoleKassaTicket\ConsoleKassaTicket\obj\Debug\ConsoleKassaTicket.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes07StaticEnum\ConsoleKassaTicket\ConsoleKassaTicket\obj\Debug\ConsoleKassaTicket.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes07StaticEnum\ConsoleKassaTicket\ConsoleKassaTicket\obj\Debug\ConsoleKassaTicket.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe-HpSiebe-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnLes07StaticEnum\ConsoleKassaTicket\ConsoleKassaTicket\obj\Debug\ConsoleKassaTicket.pdb
