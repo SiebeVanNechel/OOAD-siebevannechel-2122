@@ -43,7 +43,7 @@ namespace WpfEscapeGame
             //add stoel & poster
             room1.Items.Add(chair);
             room1.Items.Add(poster);
-            UpdateUI();
+            UpdateUI(); 
         }
         /// <summary>
         /// Update de items in de ListBoxes
