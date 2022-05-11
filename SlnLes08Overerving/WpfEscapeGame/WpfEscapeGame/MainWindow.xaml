@@ -17,5 +17,10 @@
         <ListBox x:Name="lstRoomItems" HorizontalAlignment="Left" Height="155" Margin="24,176,0,0" VerticalAlignment="Top" Width="234" SelectionChanged="LstItems_SelectionChanged"/>
         <Label Content="Picked up items" HorizontalAlignment="Left" Height="26" Margin="528,150,0,0" VerticalAlignment="Top" Width="112"/>
         <ListBox x:Name="lstMyItems" HorizontalAlignment="Left" Height="155" Margin="528,176,0,0" VerticalAlignment="Top" Width="239" SelectionChanged="LstItems_SelectionChanged"/>
+        <Label Content="Room doors" HorizontalAlignment="Left" Height="26" Margin="24,352,0,0" VerticalAlignment="Top" Width="112"/>
+        <ListBox x:Name="lstRoomDoors" HorizontalAlignment="Left" Height="118" Margin="24,383,0,0" VerticalAlignment="Top" Width="234" SelectionChanged="LstItems_SelectionChanged"/>
+        <Button x:Name="btnOpenWith" Content="&lt;- OPEN WITH -&gt;" HorizontalAlignment="Left" Height="35" Margin="313,383,0,0" VerticalAlignment="Top" Width="161" IsEnabled="False" Click="btnOpenWith_Click"/>
+        <Button x:Name="btnEnter" Content="&lt;- ENTER" HorizontalAlignment="Left" Height="35" Margin="313,423,0,0" VerticalAlignment="Top" Width="161" IsEnabled="False" Click="btnEnter_Click" />
+        <Image x:Name="imgBox" HorizontalAlignment="Left" Height="97" Margin="540,383,0,0" VerticalAlignment="Top" Width="208"/>
     </Grid>
 </Window>

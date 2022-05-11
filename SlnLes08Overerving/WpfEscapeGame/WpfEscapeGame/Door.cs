@@ -6,27 +6,28 @@ using System.Threading.Tasks;
 
 namespace WpfEscapeGame
 {
-    class Item 
+    class Door
     {
         public string Name { get; set; }
         public string Description { get; set; }
         public bool IsLocked { get; set; } = false;
+
         public Item Key { get; set; }
-        public Item HiddenItem { get; set; }
+        public Room NextRoom { get; set; }
 
-        public bool IsPortable { get; set; } = true;
-        public Item(string name, string desc)
+        public Door(string name, string desc)
         {
             Name = name;
             Description = desc;
         }
 
-        public Item(string name, string desc, bool portable)
+        public Door(string name, string desc, Room nxt)
         {
             Name = name;
             Description = desc;
-            IsPortable = portable;
+            NextRoom = nxt;
         }
+
         public override string ToString()
         {
             return Name;
