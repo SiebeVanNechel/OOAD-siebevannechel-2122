@@ -58,6 +58,7 @@
     <Compile Include="Actor.cs" />
     <Compile Include="Door.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="LockableItem.cs" />
     <Compile Include="Room.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
