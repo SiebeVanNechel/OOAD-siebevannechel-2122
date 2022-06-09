@@ -11,7 +11,7 @@ namespace MyClassLibrary
     public class User
     {
         // variabelen
-        private static string connString = ConfigurationManager.AppSettings["connString"];
+        public static string connString = ConfigurationManager.AppSettings["connStr"];
 
         // properties
         public int Id { get; }
