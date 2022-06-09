@@ -1,0 +1,6 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\MyClassLibrary\bin\Debug\MyClassLibrary.dll
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\MyClassLibrary\bin\Debug\MyClassLibrary.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\MyClassLibrary\obj\Debug\MyClassLibrary.dll
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\MyClassLibrary\obj\Debug\MyClassLibrary.pdb

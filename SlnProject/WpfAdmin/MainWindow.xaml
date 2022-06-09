@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfAdmin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAdmin"
+        mc:Ignorable="d" 
+        Title="Users" Height="300" Width="500">
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,0">
+            <Button x:Name="btnEdit" Content="bewerk" Margin="10,0,10,10" IsEnabled="False" Padding="10,5"/>
+            <Button x:Name="btnRemove" Content="verwijder" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" />
+            <Button x:Name="btnNew" Content="nieuw..." Margin="10,0,10,10" Padding="10,5" Click="BtnNew_Click"/>
+        </StackPanel>
+        <Grid DockPanel.Dock="Right" Width="250" Margin="20,10" Background="#FFFCFAFA">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Id" FontWeight="Bold" />
+            <Label Grid.Column="1" x:Name="lblId" />
+            <Label Grid.Row="1" Content="Achternaam" FontWeight="Bold" />
+            <Label Grid.Row="1" Grid.Column="1" x:Name="lblAchternaam" />
+            <Label Grid.Row="2" Content="Voornaam" FontWeight="Bold" />
+            <Label Grid.Row="2" Grid.Column="1" x:Name="lblVoornaam" />
+            <Label Grid.Row="3" Content="Rol" FontWeight="Bold" />
+            <Label Grid.Row="3" Grid.Column="1" x:Name="lblRole" />
+            <Label Grid.Row="4" Content="Create date" FontWeight="Bold" />
+            <Label Grid.Row="4" Grid.Column="1" x:Name="lblCreatedate" />
+            <Label Grid.Row="5" Content="Login" FontWeight="Bold" />
+            <Label Grid.Row="5" Grid.Column="1" x:Name="lblLogin" />
+        </Grid>
+        <ListBox x:Name="lbxResults" Margin="20,10,0,10" />
+    </DockPanel>
+</Window>
