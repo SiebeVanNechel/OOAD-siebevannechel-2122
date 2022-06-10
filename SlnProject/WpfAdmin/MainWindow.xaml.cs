@@ -36,6 +36,7 @@ namespace WpfAdmin
         {
             // wis lijst en labels
             lbxResults.Items.Clear();
+            lblId.Content = "";
             lblAchternaam.Content = "";
             lblVoornaam.Content = "";
             lblRole.Content = "";
@@ -57,6 +58,7 @@ namespace WpfAdmin
         {
             NewWindow newWin = new NewWindow();
             newWin.Show();
+            this.Close();
         }
 
         private void lbxResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -85,6 +87,22 @@ namespace WpfAdmin
             EditWindow newWin = new EditWindow(selectedId);
             newWin.Show();
             this.Close();
+        }
+
+        private void btnRemove_Click(object sender, RoutedEventArgs e)
+        {
+            // vraag id geselecteerde werknemer
+            ListBoxItem item = (ListBoxItem)lbxResults.SelectedItem;
+            int userId = Convert.ToInt32(item.Tag);
+            User user = User.FindById(userId);
+
+            // bevestiging
+            MessageBoxResult result = MessageBox.Show($"Ben je zeker dat je gebruiker #{userId} wil verwijderen?", "Gebruiker verwijderen", MessageBoxButton.YesNo);
+            if (result != MessageBoxResult.Yes) return;
+
+            // verwijder
+            user.DeleteFromDb();
+            ReloadUsers(null);
         }
     }
 }

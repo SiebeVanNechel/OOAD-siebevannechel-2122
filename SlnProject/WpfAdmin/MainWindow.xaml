@@ -7,10 +7,10 @@
         mc:Ignorable="d" 
         Title="Users" Height="300" Width="500">
     <DockPanel LastChildFill="True">
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,0">
-            <Button x:Name="btnEdit" Content="bewerk" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" Click="btnEdit_Click"/>
-            <Button x:Name="btnRemove" Content="verwijder" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" />
-            <Button x:Name="btnNew" Content="nieuw..." Margin="10,0,10,10" Padding="10,5" Click="BtnNew_Click"/>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0">
+            <Button x:Name="btnEdit" Content="Bewerk" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" Click="btnEdit_Click"/>
+            <Button x:Name="btnRemove" Content="Verwijder" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" Click="btnRemove_Click" />
+            <Button x:Name="btnNew" Content="Nieuw..." Margin="10,0,10,10" Padding="10,5" Click="BtnNew_Click"/>
         </StackPanel>
         <Grid DockPanel.Dock="Right" Width="250" Margin="20,10" Background="#FFFCFAFA">
             <Grid.ColumnDefinitions>
