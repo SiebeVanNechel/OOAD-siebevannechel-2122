@@ -27,14 +27,12 @@
         <TextBox Grid.Column="1" Grid.Row="1" x:Name="txtLast" Margin="0,0,0,10" Padding="5" />
         <Label Grid.Row="2" Content="Rol: "/>
         <TextBox Grid.Column="1" Grid.Row="2"  x:Name="txtRole" Margin="0,0,0,10" Padding="5" />
-        <Label Grid.Row="4" Content="Create date: "/>
-        <DatePicker x:Name="datCreate" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" Margin="0,0,0,10" VerticalAlignment="Top"/>
         <Label Grid.Row="5" Content="Login"/>
         <TextBox Grid.Column="1" Grid.Row="5"  x:Name="txtLogin"  Margin="0,0,0,10" Padding="5" />
         <Label Grid.Row="6" Content="Wachtwoord"/>
         <TextBox Grid.Column="1" Grid.Row="6"  x:Name="txtPassword"  Margin="0,0,0,10" Padding="5" />
         <StackPanel Grid.Column="1" Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button x:Name="btnSave" Content="opslaan" Padding="10,5" VerticalAlignment="Bottom"  />
+            <Button x:Name="btnSave" Content="opslaan" Padding="10,5" VerticalAlignment="Bottom" Click="btnSave_Click"  />
             <Button x:Name="btnCancel" Content="annuleren" Margin="10,0,0,0" Padding="10,5" VerticalAlignment="Bottom"  />
         </StackPanel>
 

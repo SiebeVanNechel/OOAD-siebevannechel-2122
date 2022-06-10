@@ -8,7 +8,7 @@
         Title="Users" Height="300" Width="500">
     <DockPanel LastChildFill="True">
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,0">
-            <Button x:Name="btnEdit" Content="bewerk" Margin="10,0,10,10" IsEnabled="False" Padding="10,5"/>
+            <Button x:Name="btnEdit" Content="bewerk" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" Click="btnEdit_Click"/>
             <Button x:Name="btnRemove" Content="verwijder" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" />
             <Button x:Name="btnNew" Content="nieuw..." Margin="10,0,10,10" Padding="10,5" Click="BtnNew_Click"/>
         </StackPanel>
@@ -39,6 +39,6 @@
             <Label Grid.Row="5" Content="Login" FontWeight="Bold" />
             <Label Grid.Row="5" Grid.Column="1" x:Name="lblLogin" />
         </Grid>
-        <ListBox x:Name="lbxResults" Margin="20,10,0,10" />
+        <ListBox x:Name="lbxResults" Margin="20,10,0,10" SelectionChanged="lbxResults_SelectionChanged" />
     </DockPanel>
 </Window>

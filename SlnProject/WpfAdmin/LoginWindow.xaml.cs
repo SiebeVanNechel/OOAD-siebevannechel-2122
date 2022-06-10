@@ -31,10 +31,11 @@ namespace WpfAdmin
 
             for (int i = 0; i < users.Count; i++)
             {
-                if (txtLogin.Text == users[i].Login && txtPassword.Text==users[i].Password)
+                if (txtLogin.Text == users[i].Login && txtPassword.Text==users[i].Password && users[i].Role=="admin")
                 {
                     MainWindow mainWin = new MainWindow(users[i].Id);
                     mainWin.Show();
+                    this.Close();
                 }
             }
         }
