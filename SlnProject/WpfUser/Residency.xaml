@@ -9,7 +9,7 @@
     <DockPanel LastChildFill="True">
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0">
 
-            <Button x:Name="btnResidencyHistory" Content="History" Margin="10,0,10,10" Padding="10,5" Click="btnNewPet_Click" />
+            <Button x:Name="btnResidencyHistory" Content="History" Margin="10,0,10,10" Padding="10,5"  />
         </StackPanel>
         <Grid DockPanel.Dock="Right" Width="250" Margin="20,10" Background="#FFFCFAFA">
             <Grid.ColumnDefinitions>
@@ -37,7 +37,7 @@
 
 
         </Grid>
-        <ListBox x:Name="lbxResults" Margin="20,10,0,10" SelectionChanged="lbxResults_SelectionChanged" />
+        <ListBox x:Name="lbxResults" Margin="20,10,0,10"/>
 
     </DockPanel>
 </Window>

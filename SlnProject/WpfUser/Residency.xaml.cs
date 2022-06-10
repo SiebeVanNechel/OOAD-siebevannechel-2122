@@ -37,7 +37,7 @@ namespace WpfUser
             lblRemarks.Content = "";
 
             // laad alle werknemers in
-            List<Residency> residenys = Residency.GetResidency(loginId);
+           /* List<Residency> residenys = Residency.GetResidency(loginId);
             foreach (Residency residency in residenys)
             {
                 ListBoxItem item = new ListBoxItem();
@@ -45,7 +45,7 @@ namespace WpfUser
                 item.Tag = residency.id;
                 item.IsSelected = selectedId == residency.Id;
                 lbxResults.Items.Add(item);
-            }
+            }*/
         }
     }
 }
