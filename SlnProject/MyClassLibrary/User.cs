@@ -34,7 +34,7 @@ namespace MyClassLibrary
                 conn.Open();
 
                 //voer SQL commando uit
-                SqlCommand comm = new SqlCommand("SELECT * FROM User", conn);
+                SqlCommand comm = new SqlCommand("SELECT * FROM [User]", conn);
                 SqlDataReader reader = comm.ExecuteReader();
 
                 // lees en verwerk de resultaten
