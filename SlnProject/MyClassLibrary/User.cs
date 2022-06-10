@@ -85,7 +85,7 @@ namespace MyClassLibrary
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
-                SqlCommand comm = new SqlCommand("DELETE FROM [User] WHERE id = @parID", conn);
+                SqlCommand comm = new SqlCommand("DELETE FROM [User] WHERE i = @parID", conn);
                 comm.Parameters.AddWithValue("@parID", Id);
                 comm.ExecuteNonQuery();
             }
