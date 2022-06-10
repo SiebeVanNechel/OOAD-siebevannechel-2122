@@ -8,10 +8,11 @@
         Title="User" Height="300" Width="500">
     <DockPanel LastChildFill="True">
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,0">
-            <Button x:Name="btnDetails" Content="Bekijk details" Margin="10,0,10,10" IsEnabled="False" Padding="10,5"  />
-            <Button x:Name="btnEditPet" Content="Bewerk" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" />
-            <Button x:Name="btnRemovePet" Content="Verwijder" Margin="10,0,10,10" IsEnabled="False" Padding="10,5"  />
-            <Button x:Name="btnNewPet" Content="Nieuw Huisdier" Margin="10,0,10,10" Padding="10,5" />
+            <Button x:Name="btnDetails" Content="Bekijk details" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" Click="btnDetails_Click"  />
+            <Button x:Name="btnEditPet" Content="Bewerk" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" Click="btnEditPet_Click" />
+            <Button x:Name="btnRemovePet" Content="Verwijder" Margin="10,0,10,10" IsEnabled="False" Padding="10,5" Click="btnRemovePet_Click"  />
+            <Button x:Name="btnNewPet" Content="Nieuw Huisdier" Margin="10,0,10,10" Padding="10,5" Click="btnNewPet_Click" />
+            <Button x:Name="btnResidency" Content="Verblijf" Margin="10,0,10,10" Padding="10,5"  />
         </StackPanel>
         <Grid DockPanel.Dock="Right" Width="250" Margin="20,10" Background="#FFFCFAFA">
             <Grid.ColumnDefinitions>

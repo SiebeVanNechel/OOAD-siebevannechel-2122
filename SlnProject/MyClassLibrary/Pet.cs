@@ -78,7 +78,8 @@ namespace MyClassLibrary
                     pet.Name = Convert.ToString(reader2["name"]);
                     pet.Remarks = Convert.ToString(reader2["remarks"]);
                     pet.Sex = Convert.ToInt32(reader2["sex"]);
-                    pet.Size = Convert.ToInt32(reader2["size"]);
+                    int? size = reader2["size"] == DBNull.Value ? null : (int?)Convert.ToInt32(reader2["size"]);
+                    pet.Size = size;
                     pet.Age = Convert.ToInt32(reader2["age"]);
                     pet.UserId = Convert.ToInt32(reader2["user_id"]);
                     pet.TypeName = Convert.ToString(reader2["type_name"]);
@@ -87,11 +88,80 @@ namespace MyClassLibrary
             }
         }
 
+        public int InsertToDb()
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand(
+                  "INSERT INTO [Pet](name, remarks, sex, size, age, user_id, type_name) output INSERTED.Id VALUES(@par1,@par2,@par3,@par4,@par5,@par6,@par7)", conn);
+                comm.Parameters.AddWithValue("@par1", Name);
+                comm.Parameters.AddWithValue("@par2", Remarks);
+                comm.Parameters.AddWithValue("@par3", Sex);
+                if (Size==null)
+                {
+                    comm.Parameters.AddWithValue("@par4", DBNull.Value);
+                }
+                else
+                {
+                    comm.Parameters.AddWithValue("@par4", Size);
+                }
+                comm.Parameters.AddWithValue("@par5", Age);
+                comm.Parameters.AddWithValue("@par6", UserId);
+                comm.Parameters.AddWithValue("@par7", TypeName);
+                return (int)comm.ExecuteScalar();
+            }
+        }
+
+        public void DeleteFromDb()
+        {
+            // verwijder pet
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand("DELETE FROM [Pet] WHERE id = @parID", conn);
+                comm.Parameters.AddWithValue("@parID", Id);
+                comm.ExecuteNonQuery();
+            }
+        }
+
+        public void UpdateInDb()
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+
+                // STANDARD QUERY VERSION
+                SqlCommand comm = new SqlCommand(
+                    @"UPDATE [Pet]
+                        SET name=@par1, remarks=@par2, sex=@par3, size=@par4, age=@par5, type_name=@par6 WHERE Id = @parID", conn);
+                comm.Parameters.AddWithValue("@par1", Name);
+                comm.Parameters.AddWithValue("@par2", Remarks);
+                comm.Parameters.AddWithValue("@par3", Sex);
+                comm.Parameters.AddWithValue("@par4", Size);
+                comm.Parameters.AddWithValue("@par5", Age);
+                comm.Parameters.AddWithValue("@par6", TypeName);
+
+                comm.Parameters.AddWithValue("parID", Id);
+                comm.ExecuteNonQuery();
+            }
+        }
+
 
         // constructoren
         public Pet(int id, string name, string remarks, int sex, int? size, int age, int userid, string typename)
         {
             Id = id;
+            Name = name;
+            Remarks = remarks;
+            Sex = sex;
+            Age = age;
+            UserId = userid;
+            TypeName = typename;
+        }
+
+        public Pet(string name, string remarks, int sex, int? size, int age, int userid, string typename)
+        {
             Name = name;
             Remarks = remarks;
             Sex = sex;

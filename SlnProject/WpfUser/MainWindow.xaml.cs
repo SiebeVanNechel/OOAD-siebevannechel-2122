@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MyClassLibrary;
+using WpfUser;
 
 namespace WpfAdmin
 {
@@ -29,12 +30,13 @@ namespace WpfAdmin
         {
             InitializeComponent();
             loginId = id;
-            ReloadUser(loginId);
+            ReloadPet(loginId);
         }
 
-        public void ReloadUser(int loginId)
+        public void ReloadPet(int loginId)
         {
             // wis labels
+            lbxResults.Items.Clear();
             lblId.Content = "";
             lblAchternaam.Content = "";
             lblVoornaam.Content = "";
@@ -82,6 +84,42 @@ namespace WpfAdmin
             lblCreatedate.Content = user.CreateDate;
             lblLogin.Content = user.Login;
             */
+        }
+
+        private void btnDetails_Click(object sender, RoutedEventArgs e)
+        {
+            DetailWindow newWin = new DetailWindow(selectedPetId);
+            newWin.Show();
+        }
+
+        private void btnNewPet_Click(object sender, RoutedEventArgs e)
+        {
+            NewPetWindow newWin = new NewPetWindow(loginId);
+            newWin.Show();
+            this.Close();
+        }
+
+        private void btnRemovePet_Click(object sender, RoutedEventArgs e)
+        {
+            // vraag id geselecteerde werknemer
+            ListBoxItem item = (ListBoxItem)lbxResults.SelectedItem;
+            int petId = Convert.ToInt32(item.Tag);
+            Pet pet = Pet.FindById(petId);
+
+            // bevestiging
+            MessageBoxResult result = MessageBox.Show($"Ben je zeker dat je huisdier #{petId} wil verwijderen?", "Gebruiker verwijderen", MessageBoxButton.YesNo);
+            if (result != MessageBoxResult.Yes) return;
+
+            // verwijder
+            pet.DeleteFromDb();
+            ReloadPet(loginId);
+        }
+
+        private void btnEditPet_Click(object sender, RoutedEventArgs e)
+        {
+            EditPetWindow newWin = new EditPetWindow(selectedPetId, loginId);
+            newWin.Show();
+            this.Close();
         }
     }
 }

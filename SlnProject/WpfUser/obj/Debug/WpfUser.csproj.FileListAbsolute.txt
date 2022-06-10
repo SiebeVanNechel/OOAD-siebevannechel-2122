@@ -20,3 +20,7 @@ C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaa
 C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfUser\obj\Debug\WpfUser.pdb
 C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfUser\obj\Debug\DetailWindow.g.cs
 C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfUser\obj\Debug\DetailWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfUser\obj\Debug\NewPetWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfUser\obj\Debug\NewPetWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfUser\obj\Debug\EditPetWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfUser\obj\Debug\EditPetWindow.baml
