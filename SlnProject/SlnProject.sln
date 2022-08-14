@@ -1,9 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31912.275
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfGebruiker", "WpfGebruiker\WpfGebruiker.csproj", "{5EF6D408-FACE-48BE-81C3-F9FFB1FE2344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDokter", "WpfDokter\WpfDokter.csproj", "{F8E55A1F-A3EE-4AB9-B725-6C6048BE48EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DokterspraktijkClassLibrary", "DokterspraktijkClassLibrary\DokterspraktijkClassLibrary.csproj", "{D989FFC9-874D-4FA1-9C1B-49A8A397FA47}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EF6D408-FACE-48BE-81C3-F9FFB1FE2344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF6D408-FACE-48BE-81C3-F9FFB1FE2344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF6D408-FACE-48BE-81C3-F9FFB1FE2344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF6D408-FACE-48BE-81C3-F9FFB1FE2344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E55A1F-A3EE-4AB9-B725-6C6048BE48EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E55A1F-A3EE-4AB9-B725-6C6048BE48EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E55A1F-A3EE-4AB9-B725-6C6048BE48EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E55A1F-A3EE-4AB9-B725-6C6048BE48EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D989FFC9-874D-4FA1-9C1B-49A8A397FA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D989FFC9-874D-4FA1-9C1B-49A8A397FA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D989FFC9-874D-4FA1-9C1B-49A8A397FA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D989FFC9-874D-4FA1-9C1B-49A8A397FA47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
