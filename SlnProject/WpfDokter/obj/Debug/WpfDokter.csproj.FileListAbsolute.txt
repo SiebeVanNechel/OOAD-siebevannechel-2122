@@ -1,0 +1,17 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\bin\Debug\WpfDokter.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\bin\Debug\WpfDokter.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\bin\Debug\WpfDokter.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\WpfDokter.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\LoginWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\MainWindow.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\App.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\WpfDokter_MarkupCompile.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\WpfDokter_MarkupCompile.lref
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\LoginWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\MainWindow.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\WpfDokter.g.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\WpfDokter.Properties.Resources.resources
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\WpfDokter.csproj.GenerateResource.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\WpfDokter.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\WpfDokter.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfDokter\obj\Debug\WpfDokter.pdb

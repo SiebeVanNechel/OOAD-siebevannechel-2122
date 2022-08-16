@@ -75,8 +75,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageAfspraakMaken.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageOverzichtAfspraken.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageAfspraakMaken.xaml.cs">
+      <DependentUpon>PageAfspraakMaken.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageOverzichtAfspraken.xaml.cs">
+      <DependentUpon>PageOverzichtAfspraken.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -107,6 +121,9 @@
       <Project>{f8e55a1f-a3ee-4ab9-b725-6c6048be48ee}</Project>
       <Name>WpfDokter</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\DefaultAvatar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

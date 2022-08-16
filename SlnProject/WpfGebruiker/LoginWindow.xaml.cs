@@ -23,5 +23,12 @@ namespace WpfGebruiker
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWin = new MainWindow();
+            mainWin.Show();
+            this.Close();
+        }
     }
 }

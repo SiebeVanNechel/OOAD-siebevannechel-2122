@@ -15,3 +15,11 @@ C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaa
 C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\obj\Debug\WpfGebruiker.csproj.CoreCompileInputs.cache
 C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\obj\Debug\WpfGebruiker.exe
 C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\obj\Debug\WpfGebruiker.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\bin\Debug\WpfDokter.exe
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\bin\Debug\WpfDokter.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\bin\Debug\WpfDokter.exe.config
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\obj\Debug\WpfGebruiker.csproj.CopyComplete
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\obj\Debug\PageAfspraakMaken.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\obj\Debug\PageAfspraakMaken.baml
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\obj\Debug\PageOverzichtAfspraken.g.cs
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\WpfGebruiker\obj\Debug\PageOverzichtAfspraken.baml
