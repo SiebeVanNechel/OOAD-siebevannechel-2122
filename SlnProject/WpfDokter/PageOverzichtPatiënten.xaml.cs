@@ -10,25 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfDokter
 {
     /// <summary>
-    /// Interaction logic for LoginWindow.xaml
+    /// Interaction logic for PageOverzichtPatiënten.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class PageOverzichtPatiënten : Page
     {
-        public LoginWindow()
+        public PageOverzichtPatiënten()
         {
             InitializeComponent();
-        }
-
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mainWin = new MainWindow();
-            mainWin.Show();
-            this.Close();
         }
     }
 }
