@@ -1,0 +1,6 @@
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\DokterspraktijkClassLibrary\bin\Debug\DokterspraktijkClassLibrary.dll
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\DokterspraktijkClassLibrary\bin\Debug\DokterspraktijkClassLibrary.pdb
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\DokterspraktijkClassLibrary\obj\Debug\DokterspraktijkClassLibrary.csproj.AssemblyReference.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\DokterspraktijkClassLibrary\obj\Debug\DokterspraktijkClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\DokterspraktijkClassLibrary\obj\Debug\DokterspraktijkClassLibrary.dll
+C:\Users\siebe\OneDrive\Documenten\SIEBE\Documents\SCHOOL\Odisee-HpSiebe\Kwartaal3\OOAD-siebevannechel-2122\SlnProject\DokterspraktijkClassLibrary\obj\Debug\DokterspraktijkClassLibrary.pdb

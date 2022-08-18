@@ -1,6 +1,8 @@
-﻿using System;
+﻿using DokterspraktijkClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -11,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+
 
 namespace WpfGebruiker
 {
@@ -26,9 +29,27 @@ namespace WpfGebruiker
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWin = new MainWindow();
-            mainWin.Show();
-            this.Close();
+            List<Patient> Patienten = Patient.GetAll();
+
+            for (int i = 0; i < Patienten.Count; i++)
+            {
+                //MessageBox.Show(HashPassword(txtPassword.Text));
+                if (txtEmail.Text == Patienten[i].Email && HashPassword(txtPassword.Text).ToLower() == Patienten[i].Paswoord)
+                {
+                    MainWindow mainWin = new MainWindow(Patienten[i].Id);
+                    mainWin.Show();
+                    this.Close();
+                }
+            }
         }
+        
+        protected static string HashPassword(string pw)
+        {
+            SHA256CryptoServiceProvider sha256 = new SHA256CryptoServiceProvider();
+            byte[] pwBytes = Encoding.UTF8.GetBytes(pw);
+            byte[] pwHashed = sha256.ComputeHash(pwBytes);
+            return BitConverter.ToString(pwHashed).Replace("-", String.Empty);
+        }
+
     }
 }

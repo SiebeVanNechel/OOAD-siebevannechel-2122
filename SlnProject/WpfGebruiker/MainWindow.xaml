@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:WpfGebruiker"
         mc:Ignorable="d"
         Title="WPF Gebruiker" Height="500" Width="600">
-    <Grid>
-        <TabControl>
+    <Grid Loaded="Grid_Loaded">
+        <TabControl >
             <TabItem Header="Profiel" Width="140" FontWeight="Bold" FontSize="14" >
                 <Grid Margin="20,20">
                     <Grid.ColumnDefinitions>
@@ -24,20 +24,20 @@
                     <Image Source="Img\DefaultAvatar.png" HorizontalAlignment="Left" Height="100" Margin="0,10,0,0" VerticalAlignment="Top" Width="100"/>
                     <Button Content="Afbeelding wijzigen" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Width="158" Height="36" FontWeight="Bold" FontSize="14"/>
                     <Label Content="Voornaam: " HorizontalAlignment="Left" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
-                    <Label Content="Joske" HorizontalAlignment="Left" Margin="120,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="lblVoornaam" Content="Joske" HorizontalAlignment="Left" Margin="120,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontWeight="Normal"/>
                     <Label Content="Familienaam: " HorizontalAlignment="Left" Margin="0,30,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
-                    <Label Content="Vermeulen" HorizontalAlignment="Left" Margin="120,30,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="lblAchternaam" Content="Vermeulen" HorizontalAlignment="Left" Margin="120,30,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontWeight="Normal"/>
                     <Label Content="Geslacht: " HorizontalAlignment="Left" Margin="0,50,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
-                    <Label Content="Man" HorizontalAlignment="Left" Margin="120,50,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="lblGeslacht" Content="Man" HorizontalAlignment="Left" Margin="120,50,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontWeight="Normal"/>
                     <Label Content="Geboortedatum: " HorizontalAlignment="Left" Margin="0,70,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14"/>
-                    <Label Content="03/12/1995" HorizontalAlignment="Left" Margin="120,70,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontWeight="Normal"/>
+                    <Label x:Name="lblGeboortedatum" Content="03/12/1995" HorizontalAlignment="Left" Margin="120,70,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" FontWeight="Normal"/>
                     <Label Content="Email: " HorizontalAlignment="Left" Margin="0,10,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBox  HorizontalAlignment="Center" Height="23" Margin="120,10,101,0" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Width="239"/>
+                    <TextBox x:Name="txtEmail"  HorizontalAlignment="Center" Height="23" Margin="120,10,101,0" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Width="239" FontWeight="Normal"/>
                     <Label Content="GSM-nummer: " HorizontalAlignment="Left" Margin="0,40,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="14"/>
-                    <TextBox  HorizontalAlignment="Center" Height="23" Margin="151,40,101,0" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Width="208"/>
+                    <TextBox x:Name="txtGsm"  HorizontalAlignment="Center" Height="23" Margin="151,40,101,0" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Width="208" FontWeight="Normal"/>
                     <Label Content="Stuur een herinnering via: " HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Center" FontSize="14"/>
-                    <ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="158"/>
-                    <Button Content="Afbeelding wijzigen" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Width="158" Height="36" FontWeight="Bold" FontSize="14"/>
+                    <ComboBox x:Name="ComboBoxHerinnering" Grid.Column="1" HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="158"/>
+                    <Button Content="Voorkeuren opslaan" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Width="158" Height="36" FontWeight="Bold" FontSize="14"/>
 
                 </Grid>
             </TabItem>
