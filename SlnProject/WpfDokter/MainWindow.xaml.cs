@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DokterspraktijkClassLibrary;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +22,32 @@ namespace WpfDokter
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        string connString = ConfigurationManager.AppSettings["connStr"];
+        int loginId;
+        public MainWindow(int id)
         {
             InitializeComponent();
+            loginId = id;
+        }
+
+        private void Calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListBoxDagAfspraken.Items.Clear();
+            lblAfsprakenVoor.Content = "Afspraken voor ";
+            lblAfsprakenVoor.Content += Calendar.SelectedDate.Value.ToString("dddd dd MMMM yyyy");
+
+            // vul listbox
+            List<Afspraak> afspraken = Afspraak.GetAll();
+            foreach (Afspraak afspraak in afspraken)
+            {
+                ListBoxItem item = new ListBoxItem();
+                if (afspraak.DokterId == loginId)
+                {
+                    item.Content = afspraak.ToString();
+                    item.Tag = afspraak.Id;
+                    ListBoxDagAfspraken.Items.Add(item);
+                }
+            }
         }
     }
 }

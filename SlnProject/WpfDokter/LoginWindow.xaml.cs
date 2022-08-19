@@ -11,6 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using DokterspraktijkClassLibrary;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace WpfDokter
 {
@@ -26,9 +30,38 @@ namespace WpfDokter
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWin = new MainWindow();
-            mainWin.Show();
-            this.Close();
+            lblFoutmelding.Content = "";
+            List<Dokter> Dokters = Dokter.GetAll();
+            for (int i = 0; i < Dokters.Count; i++)
+            {
+                //MessageBox.Show(HashPassword(txtPassword.Text));
+                if (txtEmail.Text == Dokters[i].Email && HashPassword(txtPassword.Text).ToLower() == Dokters[i].Paswoord)
+                {
+                    MainWindow mainWin = new MainWindow(Dokters[i].Id);
+                    mainWin.Show();
+                    this.Close();
+                }
+                else if (txtEmail.Text == Dokters[i].Email && HashPassword(txtPassword.Text).ToLower() != Dokters[i].Paswoord)
+                {
+                    lblFoutmelding.Content = "Onjuist paswoord";
+                }
+                else if (txtEmail.Text != Dokters[i].Email && HashPassword(txtPassword.Text).ToLower() == Dokters[i].Paswoord)
+                {
+                    lblFoutmelding.Content = "Onjuist mailadres";
+                }
+                else if (txtEmail.Text != Dokters[i].Email && HashPassword(txtPassword.Text).ToLower() != Dokters[i].Paswoord)
+                {
+                    lblFoutmelding.Content = "Onjuist mailadres en paswoord";
+                }
+            }
+        }
+
+        protected static string HashPassword(string pw)
+        {
+            SHA256CryptoServiceProvider sha256 = new SHA256CryptoServiceProvider();
+            byte[] pwBytes = Encoding.UTF8.GetBytes(pw);
+            byte[] pwHashed = sha256.ComputeHash(pwBytes);
+            return BitConverter.ToString(pwHashed).Replace("-", String.Empty);
         }
     }
 }

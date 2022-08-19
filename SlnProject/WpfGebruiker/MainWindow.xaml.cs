@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace WpfGebruiker
     {
         string connString = ConfigurationManager.AppSettings["connStr"];
         int loginId;
+        //Patient patient;
         public MainWindow(int id)
         {
             InitializeComponent();
@@ -40,6 +42,21 @@ namespace WpfGebruiker
             lblGeboortedatum.Content = patient.Geboortedatum;
             txtEmail.Text = patient.Email;
             txtGsm.Text = patient.Gsm.ToString();
+            ComboBoxHerinnering.Text = patient.Notificaties.ToString();
+        }
+
+        private void btnVoorkeurenOpslaan_Click(object sender, RoutedEventArgs e)
+        {
+            // voorkeuren opslaan
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                Patient patient = Patient.FindById(loginId);
+                patient.Email = txtEmail.Text;
+                patient.Gsm = txtGsm.Text;
+                //patient.Notificaties = ComboBoxHerinnering.SelectedItem;
+
+                patient.UpdateInDb();
+            }
         }
     }
 }

@@ -12,7 +12,8 @@ namespace DokterspraktijkClassLibrary
     {
         // variabelen
         public static string connString = ConfigurationManager.AppSettings["connStr"];
-        public enum Gendertype { Onbekent = 0, Man = 1, Vrouw = 2, Nvt = 9 }
+        public enum Gendertype { Man = 1, Vrouw = 2 }
+        public enum Notificationtype { Email = 2, Gsm = 3 }
 
         // properties
         public int Id { get; set; }
@@ -24,7 +25,7 @@ namespace DokterspraktijkClassLibrary
         public string Paswoord { get; set; }
         public DateTime Geboortedatum { get; set; }
         public string Image { get; set; }
-        public int Notificaties { get; set; }
+        public Notificationtype Notificaties { get; set; }
 
         // methods
         public static List<Patient> GetAll()
@@ -53,7 +54,7 @@ namespace DokterspraktijkClassLibrary
                     string paswoord = Convert.ToString(reader["paswoord"]);
                     DateTime geboortedatum = Convert.ToDateTime(reader["geboortedatum"]);
                     // string image = Convert.ToString(reader["image"]);
-                    int notificaties = Convert.ToInt32(reader["notificaties"]);
+                    Notificationtype notificaties = (Notificationtype)Convert.ToInt32(reader["notificaties"]);
                     patienten.Add(new Patient(id, voornaam, achternaam, geslacht, gsm, email, paswoord, geboortedatum, notificaties));
                 }
                 return patienten;
@@ -87,9 +88,50 @@ namespace DokterspraktijkClassLibrary
                     patient.Email = Convert.ToString(reader2["email"]);
                     patient.Paswoord = Convert.ToString(reader2["paswoord"]);
                     patient.Geboortedatum = Convert.ToDateTime(reader2["geboortedatum"]);
-                    patient.Notificaties=Convert.ToInt32(reader2["notificaties"]);
+                    patient.Notificaties=(Notificationtype)Convert.ToInt32(reader2["notificaties"]);
                 }
                 return patient;
+            }
+        }
+
+        public int InsertToDb()
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand(
+                  "INSERT INTO [Patient](email, gsm, notification) output INSERTED.Id VALUES(@par1,@par2,@par3)", conn);
+                comm.Parameters.AddWithValue("@par1", Email);
+                comm.Parameters.AddWithValue("@par2", Gsm);
+                comm.Parameters.AddWithValue("@par3", Notificaties);
+
+                return (int)comm.ExecuteScalar();
+            }
+        }
+
+        public void UpdateInDb()
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+
+                // STANDARD QUERY VERSION
+                SqlCommand comm = new SqlCommand(
+                    @"UPDATE Patient
+                        SET email=@par1, gsm=@par2, notificatie=@par3 
+                        WHERE ID = @parID"
+                    , conn);
+                comm.Parameters.AddWithValue("@par1", Email);
+                if (Gsm == null)
+                {
+                    comm.Parameters.AddWithValue("@par2", DBNull.Value);
+                }
+                else
+                {
+                    comm.Parameters.AddWithValue("@par2", Gsm);
+                }
+                comm.Parameters.AddWithValue("@par3", Notificaties);
+               
             }
         }
 
@@ -97,7 +139,7 @@ namespace DokterspraktijkClassLibrary
 
         public Patient() { }
 
-        public Patient( string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, string image, int notificaties)
+        public Patient( string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, string image, Notificationtype notificaties)
         {
             Voornaam = voornaam;
             Achternaam = achternaam;
@@ -110,7 +152,7 @@ namespace DokterspraktijkClassLibrary
             Notificaties = notificaties;
         }
 
-        public Patient(int id, string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, string image, int notificaties)
+        public Patient(int id, string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, string image, Notificationtype notificaties)
         {
             Id = id;
             Voornaam = voornaam;
@@ -124,7 +166,7 @@ namespace DokterspraktijkClassLibrary
             Notificaties = notificaties;
         }
 
-        public Patient(int id, string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, int notificaties)
+        public Patient(int id, string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, Notificationtype notificaties)
         {
             Id = id;
             Voornaam = voornaam;

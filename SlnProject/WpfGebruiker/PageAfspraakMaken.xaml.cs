@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DokterspraktijkClassLibrary;
 
 namespace WpfGebruiker
 {
@@ -29,6 +30,11 @@ namespace WpfGebruiker
         {
             PageOverzichtAfspraken page = new PageOverzichtAfspraken();
             this.NavigationService.Navigate(page);
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+           
         }
     }
 }

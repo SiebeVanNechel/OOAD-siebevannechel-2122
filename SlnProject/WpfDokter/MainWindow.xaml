@@ -22,8 +22,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Label Content="Kies een datum: " HorizontalAlignment="Left" FontWeight="Normal"/>
-                    <Calendar Grid.Row="1" Height="175" Width="210" HorizontalAlignment="Left"/>
-                    <Label x:Name="lblAfsprakenVoor" Grid.Row="2" Content="Afspraken voor " HorizontalAlignment="Left" FontWeight="Normal"/>
+                    <Calendar x:Name="Calendar" Grid.Row="1" Height="175" Width="210" HorizontalAlignment="Left" SelectedDatesChanged="Calendar_SelectedDatesChanged"/>
+                    <Label x:Name="lblAfsprakenVoor" Content="Afspraken voor " Grid.Row="2" HorizontalAlignment="Left" FontWeight="Normal"/>
                     <ListBox x:Name="ListBoxDagAfspraken" HorizontalAlignment="Left" Height="100" Grid.Row="3" Width="350" FontWeight="Normal" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
                     <Button Content="Annuleren" Margin="10,0,0,0" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Height="36" FontWeight="Bold" FontSize="14"/>
                     <Label Content="Reden van consultatie:" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" FontSize="14" FontWeight="Normal"/>
