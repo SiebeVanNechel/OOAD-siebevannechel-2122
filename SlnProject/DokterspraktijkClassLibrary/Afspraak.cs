@@ -71,8 +71,17 @@ namespace DokterspraktijkClassLibrary
         public override string ToString()
         {
             string uur = Moment.ToString("HH:mm");
-
-            return $"{uur} - {Klacht}";
+            string naam = "";
+            List<Patient> patienten = Patient.GetAll();
+            foreach(Patient patient in patienten)
+            {
+                if (patient.Id==PatientId)
+                {
+                    naam = patient.Voornaam + " " + patient.Achternaam;
+                }
+            }
+            Patient.GetAll();
+            return $"{uur} - {naam} - {Klacht}";
         }
     }
 }

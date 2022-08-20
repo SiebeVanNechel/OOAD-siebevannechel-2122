@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.IO;
+using System.Windows.Media.Imaging;
 
 namespace DokterspraktijkClassLibrary
 {
@@ -24,7 +26,7 @@ namespace DokterspraktijkClassLibrary
         public string Email { get; set; }
         public string Paswoord { get; set; }
         public DateTime Geboortedatum { get; set; }
-        public string Image { get; set; }
+        public BitmapImage Profielfotodata { get; set; }
         public Notificationtype Notificaties { get; set; }
 
         // methods
@@ -39,7 +41,7 @@ namespace DokterspraktijkClassLibrary
                 conn.Open();
 
                 //voer SQL commando uit
-                SqlCommand comm = new SqlCommand("SELECT id, voornaam, achternaam, geslacht, gsm, email, paswoord, geboortedatum, notificaties FROM [Patient]", conn);
+                SqlCommand comm = new SqlCommand("SELECT id, voornaam, achternaam, geslacht, gsm, email, paswoord, geboortedatum, profielfotodata, notificaties FROM [Patient]", conn);
                 SqlDataReader reader = comm.ExecuteReader();
 
                 // lees en verwerk de resultaten
@@ -49,13 +51,26 @@ namespace DokterspraktijkClassLibrary
                     string voornaam = Convert.ToString(reader["voornaam"]);
                     string achternaam = Convert.ToString(reader["achternaam"]);
                     Gendertype geslacht = (Gendertype)Convert.ToInt32(reader["Geslacht"]);
-                    string gsm = Convert.ToString(reader["gsm"]);
+                    string gsm = reader["gsm"] == DBNull.Value ? null : (string)Convert.ToString(reader["gsm"]);
                     string email = Convert.ToString(reader["email"]);
                     string paswoord = Convert.ToString(reader["paswoord"]);
                     DateTime geboortedatum = Convert.ToDateTime(reader["geboortedatum"]);
-                    // string image = Convert.ToString(reader["image"]);
+
+                    BitmapImage bitmapImg = new BitmapImage();
+
+                    if (reader["profielfotodata"] == DBNull.Value)
+                    {
+                        bitmapImg = null;
+                    }
+                    else
+                    {
+                        bitmapImg.BeginInit();
+                        bitmapImg.CacheOption = BitmapCacheOption.OnLoad;
+                        bitmapImg.StreamSource = new System.IO.MemoryStream((byte[])reader["profielfotodata"]);
+                        bitmapImg.EndInit();
+                    }
                     Notificationtype notificaties = (Notificationtype)Convert.ToInt32(reader["notificaties"]);
-                    patienten.Add(new Patient(id, voornaam, achternaam, geslacht, gsm, email, paswoord, geboortedatum, notificaties));
+                    patienten.Add(new Patient(id, voornaam, achternaam, geslacht, gsm, email, paswoord, geboortedatum, bitmapImg, notificaties));
                 }
                 return patienten;
             }
@@ -71,7 +86,7 @@ namespace DokterspraktijkClassLibrary
                 conn.Open();
 
                 // voer SQL commando uit
-                SqlCommand comm = new SqlCommand("SELECT id, voornaam, achternaam, geslacht, gsm, email, paswoord, geboortedatum, notificaties FROM [Patient] WHERE Id = @parID", conn);
+                SqlCommand comm = new SqlCommand("SELECT * FROM [Patient] WHERE Id = @parID", conn);
                 comm.Parameters.AddWithValue("@parID", id);
                 SqlDataReader reader2 = comm.ExecuteReader();
 
@@ -82,12 +97,25 @@ namespace DokterspraktijkClassLibrary
                     patient.Voornaam = Convert.ToString(reader2["voornaam"]);
                     patient.Achternaam = Convert.ToString(reader2["achternaam"]);
                     patient.Geslacht = (Gendertype)Convert.ToInt32(reader2["geslacht"]);
-                    /* int? gsm = reader2["gsm"] == DBNull.Value ? null : (int?)Convert.ToInt32(reader2["gsm"]);
-                     patient.Gsm = gsm;*/
-                    patient.Gsm = Convert.ToString(reader2["gsm"]);
+                    patient.Gsm = reader2["gsm"] == DBNull.Value ? null : Convert.ToString(reader2["gsm"]);
                     patient.Email = Convert.ToString(reader2["email"]);
                     patient.Paswoord = Convert.ToString(reader2["paswoord"]);
                     patient.Geboortedatum = Convert.ToDateTime(reader2["geboortedatum"]);
+
+                    BitmapImage bitmapImg = new BitmapImage();
+
+                    if (reader2["profielfotodata"] == DBNull.Value)
+                    {
+                        patient.Profielfotodata = null;
+                    }
+                    else
+                    {
+                        bitmapImg.BeginInit();
+                        bitmapImg.CacheOption = BitmapCacheOption.OnLoad;
+                        bitmapImg.StreamSource = new System.IO.MemoryStream((byte[])reader2["profielfotodata"]);
+                        bitmapImg.EndInit();
+                        patient.Profielfotodata = bitmapImg;
+                    }
                     patient.Notificaties=(Notificationtype)Convert.ToInt32(reader2["notificaties"]);
                 }
                 return patient;
@@ -139,7 +167,7 @@ namespace DokterspraktijkClassLibrary
 
         public Patient() { }
 
-        public Patient( string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, string image, Notificationtype notificaties)
+        public Patient( string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, BitmapImage image, Notificationtype notificaties)
         {
             Voornaam = voornaam;
             Achternaam = achternaam;
@@ -148,11 +176,11 @@ namespace DokterspraktijkClassLibrary
             Email = email;
             Paswoord = paswoord;
             Geboortedatum = geboortedatum;
-            Image = image;
+            Profielfotodata = image;
             Notificaties = notificaties;
         }
 
-        public Patient(int id, string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, string image, Notificationtype notificaties)
+        public Patient(int id, string voornaam, string achternaam, Gendertype geslacht, string gsm, string email, string paswoord, DateTime geboortedatum, BitmapImage image, Notificationtype notificaties)
         {
             Id = id;
             Voornaam = voornaam;
@@ -162,7 +190,7 @@ namespace DokterspraktijkClassLibrary
             Email = email;
             Paswoord = paswoord;
             Geboortedatum = geboortedatum;
-            Image = image;
+            Profielfotodata = image;
             Notificaties = notificaties;
         }
 

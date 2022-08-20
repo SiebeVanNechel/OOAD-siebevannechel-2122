@@ -40,6 +40,18 @@ namespace WpfGebruiker
                     mainWin.Show();
                     this.Close();
                 }
+                else if (txtEmail.Text == Patienten[i].Email && HashPassword(txtPassword.Text).ToLower() != Patienten[i].Paswoord)
+                {
+                    lblFoutmelding.Content = "Onjuist paswoord";
+                }
+                else if (txtEmail.Text != Patienten[i].Email && HashPassword(txtPassword.Text).ToLower() == Patienten[i].Paswoord)
+                {
+                    lblFoutmelding.Content = "Onjuist mailadres";
+                }
+                else if (txtEmail.Text != Patienten[i].Email && HashPassword(txtPassword.Text).ToLower() != Patienten[i].Paswoord)
+                {
+                    lblFoutmelding.Content = "Onjuist mailadres en paswoord";
+                }
             }
         }
         

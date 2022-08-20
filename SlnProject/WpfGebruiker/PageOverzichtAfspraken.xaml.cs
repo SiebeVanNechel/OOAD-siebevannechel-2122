@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DokterspraktijkClassLibrary;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +22,11 @@ namespace WpfGebruiker
     /// </summary>
     public partial class PageOverzichtAfspraken : Page
     {
-        public PageOverzichtAfspraken()
+        string connString = ConfigurationManager.AppSettings["connStr"];
+       public PageOverzichtAfspraken()
         {
             InitializeComponent();
+            
         }
 
         private void btnNieuweAfspraak_Click(object sender, RoutedEventArgs e)
@@ -31,5 +35,28 @@ namespace WpfGebruiker
             this.NavigationService.Navigate(page);
         }
 
+        private void RadioAlleAfspraken_Checked(object sender, RoutedEventArgs e)
+        {
+            List<Afspraak> afspraken = Afspraak.GetAll();
+            foreach(Afspraak afspraak in afspraken)
+            {
+               //if (window.loginId==afspraak.PatientId)
+                //{
+                ListBoxAfspraken.Items.Add(afspraak.Moment.ToString("dd/MM/yyyy") + " om " + afspraak.Moment.ToString("HH:mm"));
+                //}
+            }
+        }
+
+        private void RadioToekomstigeAfspraken_Checked(object sender, RoutedEventArgs e)
+        {
+            List<Afspraak> afspraken = Afspraak.GetAll();
+            foreach (Afspraak afspraak in afspraken)
+            {
+                /*if (MainWindow.loginid==afspraak.PatientId)
+                {
+                    ListBoxAfspraken.Items.Add(afspraak.Moment.ToString("dd/MM/yyyy") + " om " + afspraak.Moment.ToString("HH:mm"));
+                }*/
+            }
+        }
     }
 }

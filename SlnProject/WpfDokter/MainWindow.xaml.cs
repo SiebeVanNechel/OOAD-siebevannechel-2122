@@ -41,11 +41,14 @@ namespace WpfDokter
             foreach (Afspraak afspraak in afspraken)
             {
                 ListBoxItem item = new ListBoxItem();
-                if (afspraak.DokterId == loginId)
+                if (Calendar.SelectedDate.Value.ToString("dd/mm/yyyy")==afspraak.Moment.ToString("dd/mm/yyyy"))
                 {
-                    item.Content = afspraak.ToString();
-                    item.Tag = afspraak.Id;
-                    ListBoxDagAfspraken.Items.Add(item);
+                    if (afspraak.DokterId == loginId)
+                    {
+                        item.Content = afspraak.ToString();
+                        item.Tag = afspraak.Id;
+                        ListBoxDagAfspraken.Items.Add(item);
+                    }
                 }
             }
         }

@@ -20,9 +20,9 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <RadioButton x:Name="RadioAlleAfspraken" Content="Alle afspraken" HorizontalAlignment="Left" Margin="0,0,0,0" FontSize="14" GroupName="Afspraken"/>
-        <RadioButton x:Name="RadioToekomstigeAfspraken" Grid.Column="1" Content="Enkel toekomstige afspraken" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontSize="14" GroupName="Afspraken"/>
-        <ListBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="200" Margin="0,10,0,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Center" Width="370" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+        <RadioButton x:Name="RadioAlleAfspraken" Content="Alle afspraken" HorizontalAlignment="Left" Margin="0,0,0,0" FontSize="14" GroupName="Afspraken" Checked="RadioAlleAfspraken_Checked"/>
+        <RadioButton x:Name="RadioToekomstigeAfspraken" Grid.Column="1" Content="Enkel toekomstige afspraken" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" FontSize="14" GroupName="Afspraken" Checked="RadioToekomstigeAfspraken_Checked"/>
+        <ListBox x:Name="ListBoxAfspraken" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="200" Margin="0,10,0,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Center" Width="370" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
         <Label Content="Reden van consultatie:" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="14"/>
         <Label x:Name="lblRedenConsultatie" Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="14" FontStyle="Italic"/>
         <Button Content="Annuleren" Grid.Column="2" HorizontalAlignment="Left" Margin="20,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Width="130" Height="36" FontWeight="Bold" FontSize="14"/>
