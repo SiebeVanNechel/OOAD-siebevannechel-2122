@@ -95,7 +95,7 @@ namespace DokterspraktijkClassLibrary
 
         public void DeleteFromDb()
         {
-            // verwijder werknemer
+            // verwijder afspraak
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();

@@ -58,7 +58,7 @@ namespace WpfGebruiker
             if (notificatie=="Email") melding = 2;
             if (notificatie == "Gsm") melding = 3;
 
-            patient.UpdateInDb(loginId, email, gsm, melding);
+            patient.UpdateInDbDoorGebruiker(loginId, email, gsm, melding);
         }
 
         private void frmMain_Loaded(object sender, RoutedEventArgs e)

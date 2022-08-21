@@ -159,7 +159,7 @@ namespace DokterspraktijkClassLibrary
             }
         }
 
-        public void UpdateInDb(int ID, string Email, string Gsm, int Notificaties)
+        public void UpdateInDbDoorGebruiker(int ID, string Email, string Gsm, int Notificaties)
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
@@ -182,6 +182,39 @@ namespace DokterspraktijkClassLibrary
                 }
                 comm.Parameters.AddWithValue("@par3", Notificaties);
                 comm.Parameters.AddWithValue("parID", ID);
+                comm.ExecuteNonQuery();
+            }
+        }
+
+        public void UpdateInDbDoorDokter(int ID, string Voornaam, string Achternaam, int Geslacht, DateTime Geboortedatum)
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+
+                // STANDARD QUERY VERSION
+                SqlCommand comm = new SqlCommand(
+                    @"UPDATE Patient
+                        SET voornaam=@par1, achternaam=@par2, geslacht=@par3, geboortedatum=@par4 
+                        WHERE ID = @parID"
+                    , conn);
+                comm.Parameters.AddWithValue("@par1", Voornaam);
+                comm.Parameters.AddWithValue("@par2", Achternaam);
+                comm.Parameters.AddWithValue("@par3", Geslacht);
+                comm.Parameters.AddWithValue("@par4", Geboortedatum);
+                comm.Parameters.AddWithValue("parID", ID);
+                comm.ExecuteNonQuery();
+            }
+        }
+
+        public void DeleteFromDb()
+        {
+            // verwijder patient
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand("DELETE FROM Patient WHERE ID = @parID", conn);
+                comm.Parameters.AddWithValue("@parID", Id);
                 comm.ExecuteNonQuery();
             }
         }

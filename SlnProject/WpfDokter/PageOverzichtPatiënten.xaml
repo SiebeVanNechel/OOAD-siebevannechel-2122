@@ -8,24 +8,24 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageOverzichtPatiënten">
 
-    <Grid Margin="20,20">
+    <Grid Margin="20,20" Loaded="Grid_Loaded">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label Content="Zoeken: " VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
         <TextBox x:Name="txtPatientZoeken" HorizontalAlignment="Left" VerticalAlignment="Center" Height="23" Margin="60,0,0,0" Width="200" FontSize="14"/>
-        <Button x:Name="btnPatientZoeken" Content="Zoeken" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="158" Height="36" FontWeight="Bold" FontSize="14" Margin="10,0,0,0"/>
-        <ListBox x:Name="ListBoxPatienten" HorizontalAlignment="Left" Height="250" Margin="0,0,0,0" Grid.Row="1" Grid.ColumnSpan="1" VerticalAlignment="Top" Width="350"/>
+        <Button x:Name="btnPatientZoeken" Content="Zoeken" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="158" Height="36" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Click="btnPatientZoeken_Click"/>
+        <ListBox x:Name="ListBoxPatienten" HorizontalAlignment="Left" Height="200" Margin="0,0,0,0" Grid.Row="1" Grid.ColumnSpan="1" VerticalAlignment="Top" Width="350" SelectionChanged="ListBoxPatienten_SelectionChanged"/>
         <StackPanel Orientation = "Vertical" Grid.Row="1" Grid.Column="1">
-            <Button x:Name="btnInfoPatien" Content="Info" HorizontalAlignment="Center"  Width="158" Height="36" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Click="btnInfoPatien_Click"/>
-            <Button x:Name="btnEditPatient" Content="Edit" HorizontalAlignment="Center"  Width="158" Height="36" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Click="btnEditPatient_Click"/>
-            <Button x:Name="btnDeletePatient" Content="Delete" HorizontalAlignment="Center"  Width="158" Height="36" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Click="btnDeletePatient_Click"/>
+            <Button x:Name="btnInfoPatient" Content="Info" HorizontalAlignment="Center"  Width="158" Height="36" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Click="btnInfoPatien_Click" IsEnabled="False"/>
+            <Button x:Name="btnEditPatient" Content="Edit" HorizontalAlignment="Center"  Width="158" Height="36" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Click="btnEditPatient_Click" IsEnabled="False"/>
+            <Button x:Name="btnDeletePatient" Content="Delete" HorizontalAlignment="Center"  Width="158" Height="36" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Click="btnDeletePatient_Click" IsEnabled="False"/>
         </StackPanel>
     </Grid>
 </Page>

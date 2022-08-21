@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageInfoPatiënt">
 
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
@@ -31,12 +31,12 @@
         <Label Content="Email: " Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Right" FontWeight="Normal" FontSize="14"/>
         <Label Content="Gsm: " Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Right" FontWeight="Normal" FontSize="14"/>
 
-        <Label Content="Joske " Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
-        <Label Content="Vermeulen " Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
-        <Label Content="x " Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
-        <Label Content="datum " Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
-        <Label Content="@ " Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
-        <Label Content="04 " Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
+        <Label x:Name="lblVoornaam" Content="Joske " Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
+        <Label x:Name="lblAchternaam" Content="Vermeulen " Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
+        <Label x:Name="lblGeslacht" Content="x " Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
+        <Label x:Name="lblGeboortedatum" Content="datum " Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
+        <Label x:Name="lblEmail" Content="@ " Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
+        <Label x:Name="lblGsm" Content="04 " Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Normal" FontSize="14"/>
         <Button x:Name="btnTerug" Grid.Row="7" Content="Terug" VerticalAlignment="Top" HorizontalAlignment="Left"  Width="158" Height="36" FontWeight="Bold" FontSize="14" Margin="10,0,0,0" Click="btnTerug_Click"/>
     </Grid>
 </Page>
