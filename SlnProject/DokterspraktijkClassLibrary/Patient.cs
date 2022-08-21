@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.IO;
 using System.Windows.Media.Imaging;
+using Microsoft.Win32;
 
 namespace DokterspraktijkClassLibrary
 {
@@ -136,8 +137,29 @@ namespace DokterspraktijkClassLibrary
                 return (int)comm.ExecuteScalar();
             }
         }
+        public void WijzigAfbeelding()
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                UploadFoto(openFileDialog.FileName);
+            }
+        }
 
-        public void UpdateInDb()
+        private void UploadFoto(string filePath)
+        {
+            byte[] data = File.ReadAllBytes(filePath);
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand("UPDATE dbo.[Patient] SET profielfotodata=@par1 WHERE id=@parID", conn);
+                comm.Parameters.AddWithValue("@par1", data);
+                comm.Parameters.AddWithValue("@parID", Id);
+                comm.ExecuteNonQuery();
+            }
+        }
+
+        public void UpdateInDb(int ID, string Email, string Gsm, int Notificaties)
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
@@ -146,7 +168,7 @@ namespace DokterspraktijkClassLibrary
                 // STANDARD QUERY VERSION
                 SqlCommand comm = new SqlCommand(
                     @"UPDATE Patient
-                        SET email=@par1, gsm=@par2, notificatie=@par3 
+                        SET email=@par1, gsm=@par2, notificaties=@par3 
                         WHERE ID = @parID"
                     , conn);
                 comm.Parameters.AddWithValue("@par1", Email);
@@ -159,7 +181,8 @@ namespace DokterspraktijkClassLibrary
                     comm.Parameters.AddWithValue("@par2", Gsm);
                 }
                 comm.Parameters.AddWithValue("@par3", Notificaties);
-               
+                comm.Parameters.AddWithValue("parID", ID);
+                comm.ExecuteNonQuery();
             }
         }
 

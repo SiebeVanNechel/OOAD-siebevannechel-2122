@@ -23,15 +23,17 @@ namespace WpfGebruiker
     public partial class PageAfspraakMaken : Page
     {
         string connString = ConfigurationManager.AppSettings["connStr"];
-        //int loginid;
-        public PageAfspraakMaken()
+        int loginid;
+        Dokter selectedDokter;
+        public PageAfspraakMaken(int id)
         {
             InitializeComponent();
+            loginid = id;
         }
 
         private void btnTerug_Click(object sender, RoutedEventArgs e)
         {
-            PageOverzichtAfspraken page = new PageOverzichtAfspraken();
+            PageOverzichtAfspraken page = new PageOverzichtAfspraken(loginid);
             this.NavigationService.Navigate(page);
         }
 
@@ -47,13 +49,36 @@ namespace WpfGebruiker
 
         private void CmbDokters_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string[] naam = CmbDokters.SelectedItem.ToString().Split(' ');
-            Dokter dokter = Dokter.FindByName(naam[1]);
+            if (CmbDokters.SelectedIndex!=-1)
+            {
+                string[] naam = CmbDokters.SelectedItem.ToString().Split(' ');
+                selectedDokter = Dokter.FindByName(naam[1]);
 
-            lblNaam.Content = dokter.Voornaam + " " + dokter.Achternaam;
-            lblEmail.Content = "Dr. " + dokter.Email;
-            lblGsm.Content = dokter.Gsm;
-            ImgFotoDokter.Source = dokter.Profielfotodata == null ? new BitmapImage(new Uri("Img/DefaultAvatar.png", UriKind.Relative)) : dokter.Profielfotodata;
+                lblNaam.Content = selectedDokter.Voornaam + " " + selectedDokter.Achternaam;
+                lblEmail.Content = selectedDokter.Email;
+                lblGsm.Content = selectedDokter.Gsm;
+                ImgFotoDokter.Source = selectedDokter.Profielfotodata == null ? new BitmapImage(new Uri("Img/DefaultAvatar.png", UriKind.Relative)) : selectedDokter.Profielfotodata;
+            }
+        }
+
+        private void btnBevestigen_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime moment = Convert.ToDateTime(DatePickerMoment.SelectedDate.ToString()).Add(TimeSpan.Parse(CombooxUur.Text));
+            string klacht = txtRedenConsultatie.Text;
+            int patientid = loginid;
+            int dokterid = selectedDokter.Id;            
+ 
+            Afspraak afspraak = new Afspraak(0,moment, klacht, patientid, dokterid);
+            int newId = afspraak.InsertToDb();
+
+            CmbDokters.SelectedIndex = -1;
+            DatePickerMoment.SelectedDate = null;
+            txtRedenConsultatie.Text = "";
+            CombooxUur.SelectedIndex = -1;
+            ImgFotoDokter.Source = new BitmapImage(new Uri("Img/DefaultAvatar.png", UriKind.Relative));
+            lblEmail.Content = "";
+            lblGsm.Content = "";
+            lblNaam.Content = "";
         }
     }
 }

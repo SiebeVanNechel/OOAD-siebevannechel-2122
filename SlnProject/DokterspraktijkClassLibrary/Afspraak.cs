@@ -50,6 +50,60 @@ namespace DokterspraktijkClassLibrary
 
         }
 
+        public static Afspraak FindById(int id)
+        {
+            Afspraak afspraak = new Afspraak();
+            // ... find pets in database
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                // open connectie
+                conn.Open();
+
+                // voer SQL commando uit
+                SqlCommand comm = new SqlCommand("SELECT * FROM [Afspraak] WHERE Id = @parID", conn);
+                comm.Parameters.AddWithValue("@parID", id);
+                SqlDataReader reader2 = comm.ExecuteReader();
+
+                // lees en verwerk resultaten
+                while (reader2.Read())
+                {
+                    afspraak.Id = Convert.ToInt32(reader2["id"]);
+                    afspraak.Moment = Convert.ToDateTime(reader2["moment"]);
+                    afspraak.Klacht = Convert.ToString(reader2["klacht"]);
+                    afspraak.PatientId = Convert.ToInt32(reader2["patient_id"]);
+                    afspraak.DokterId = Convert.ToInt32(reader2["dokter_id"]);
+                }
+                return afspraak;
+            }
+        }
+
+        public int InsertToDb()
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand(
+                  "INSERT INTO Afspraak(moment, klacht, patient_id, dokter_id) output INSERTED.ID VALUES(@par1,@par2,@par3,@par4)", conn);
+                comm.Parameters.AddWithValue("@par1", Moment);
+                comm.Parameters.AddWithValue("@par2", Klacht);
+                comm.Parameters.AddWithValue("@par3", PatientId);
+                comm.Parameters.AddWithValue("@par4", DokterId);
+
+                return (int)comm.ExecuteScalar();
+            }
+        }
+
+        public void DeleteFromDb()
+        {
+            // verwijder werknemer
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand("DELETE FROM Afspraak WHERE ID = @parID", conn);
+                comm.Parameters.AddWithValue("@parID", Id);
+                comm.ExecuteNonQuery();
+            }
+        }
         public Afspraak() { }
 
         public Afspraak(int id, DateTime moment, string klacht, int patientid, int dokterid)
@@ -81,7 +135,7 @@ namespace DokterspraktijkClassLibrary
                 }
             }
             Patient.GetAll();
-            return $"{uur} - {naam} - {Klacht}";
+            return $"{uur} - {naam}";
         }
     }
 }

@@ -41,16 +41,25 @@ namespace WpfDokter
             foreach (Afspraak afspraak in afspraken)
             {
                 ListBoxItem item = new ListBoxItem();
-                if (Calendar.SelectedDate.Value.ToString("dd/mm/yyyy")==afspraak.Moment.ToString("dd/mm/yyyy"))
+                if (Calendar.SelectedDate.Value.ToString("dd/mm/yyyy")==afspraak.Moment.ToString("dd/mm/yyyy") && afspraak.DokterId == loginId)
                 {
-                    if (afspraak.DokterId == loginId)
-                    {
-                        item.Content = afspraak.ToString();
-                        item.Tag = afspraak.Id;
-                        ListBoxDagAfspraken.Items.Add(item);
-                    }
+                    item.Content = afspraak.ToString();
+                    item.Tag = afspraak.Id;
+                    ListBoxDagAfspraken.Items.Add(item);
                 }
             }
+        }
+
+        private void ListBoxDagAfspraken_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListBoxItem selectedItem = (ListBoxItem)ListBoxDagAfspraken.SelectedItem;
+            lblRedenConsultatie.Content = Afspraak.FindById(Convert.ToInt32(selectedItem.Tag)).Klacht;
+        }
+
+        private void frmMain_Loaded(object sender, RoutedEventArgs e)
+        {
+            PageOverzichtPatiënten page = new PageOverzichtPatiënten();
+            frmMain.NavigationService.Navigate(page);
         }
     }
 }

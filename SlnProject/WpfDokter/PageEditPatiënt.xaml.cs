@@ -24,5 +24,11 @@ namespace WpfDokter
         {
             InitializeComponent();
         }
+
+        private void btnTerug_Click(object sender, RoutedEventArgs e)
+        {
+            PageOverzichtPatiënten page = new PageOverzichtPatiënten();
+            this.NavigationService.Navigate(page);
+        }
     }
 }

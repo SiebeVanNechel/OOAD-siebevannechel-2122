@@ -50,7 +50,30 @@ namespace WpfGebruiker
 
         private void btnVoorkeurenOpslaan_Click(object sender, RoutedEventArgs e)
         {
-            
+            Patient patient = Patient.FindById(loginId);
+            string email = txtEmail.Text;
+            string gsm = txtGsm.Text;
+            string notificatie = ComboBoxHerinnering.Text;
+            int melding = 0;
+            if (notificatie=="Email") melding = 2;
+            if (notificatie == "Gsm") melding = 3;
+
+            patient.UpdateInDb(loginId, email, gsm, melding);
+        }
+
+        private void frmMain_Loaded(object sender, RoutedEventArgs e)
+        {
+            PageOverzichtAfspraken page = new PageOverzichtAfspraken(loginId);
+            frmMain.NavigationService.Navigate(page);
+        }
+
+        private void btnAfbeeldingWijzigen_Click(object sender, RoutedEventArgs e)
+        {
+            Patient patient = Patient.FindById(loginId);
+            patient.WijzigAfbeelding();
+
+            Patient patient1 = Patient.FindById(loginId);
+            ImgFotoUser.Source = patient1.Profielfotodata == null ? new BitmapImage(new Uri("Img/DefaultAvatar.png", UriKind.Relative)) : patient1.Profielfotodata;
         }
     }
 }

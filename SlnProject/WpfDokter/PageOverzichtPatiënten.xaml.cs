@@ -20,9 +20,29 @@ namespace WpfDokter
     /// </summary>
     public partial class PageOverzichtPatiënten : Page
     {
+
+        //int loginId;
         public PageOverzichtPatiënten()
         {
             InitializeComponent();
+            //loginId = id;
+        }
+
+        private void btnInfoPatien_Click(object sender, RoutedEventArgs e)
+        {
+            PageInfoPatiënt page = new PageInfoPatiënt();
+            this.NavigationService.Navigate(page);
+        }
+
+        private void btnEditPatient_Click(object sender, RoutedEventArgs e)
+        {
+            PageEditPatiënt page = new PageEditPatiënt();
+            this.NavigationService.Navigate(page);
+        }
+
+        private void btnDeletePatient_Click(object sender, RoutedEventArgs e)
+        {
+             
         }
     }
 }
